@@ -5,7 +5,7 @@ Verify Metamath proofs using
 
 ## Inputs
 
-## `main-file`
+### `main-file`
 
 **Required** Name of the main Metamath file to verify.
 
