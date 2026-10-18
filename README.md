@@ -83,7 +83,7 @@ public domain. Credits: N. Megill (1994) and G. Mascellani (2019).
 [XITS Math font](https://fontlibrary.org/en/font/xits-math) is
 licenced under [Open Font Licence](https://openfontlicense.org/).
 
-# Continous Integration
+# Continuous Integration
 
 Every change pushed to this repository is verified by local
 Docker-based actions found in `.github/actions` folder. To run the
