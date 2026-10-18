@@ -45,7 +45,7 @@ Metamath's largest proofs collection,
 complexities of proper substitition by applying ideas concieved by
 [Tarski](https://doi.org/10.1007/BF01972461) and developed by [Kalish
 and Montague](https://doi.org/10.1007/BF01969434),
-[Monk](doi.org/10.1007/BF01969435),
+[Monk](https://doi.org/10.1007/BF01969435),
 [Cocchiarella](https://doi.org/10.1305/ndjfl%2F1093893584), and later
 by [Megill](https://doi.org/10.1305/ndjfl%2F1040149359). It was not
 clear to me however how one _would_ (if had so chosen) express
