@@ -256,3 +256,12 @@ $)
       UGUNUOPAVDUPPAUTVOVCVRGPAURAUSUSFPAKZPABBCCDPABLZPACLZMMPAVAVPVBVQDPAURAB
       BFXDXEMPAURACCFXDXFMMNUQ $.
   $}
+
+  $( Proposition 3.4.b from [Mendelson] p. 159 (Contributed by Boris Shminke,
+     18-Oct-2026.) $)
+  pr-81 $p \vdash ( ( t_1 + t_2 ) \times t_3 ) = ( ( t_1 \times t_3 ) + ( t_2
+    \times t_3 ) ) $=
+    ( ax-74 ax-11 ax-75 pr-78 pr-80 ax-49 ax-16 ax-13 pr-73 ax-6 pr-54 pr-69 )
+    ABDEZCFECPFEZACFEZBCFEZDEZPCGQCAFEZSDEZTQUACBFEZDEZUBCABHUCSIJKUDUBIJKCBGUC
+    SUALMNUARIJKUBTIJKCAGUARSOMNN $.
+
