@@ -82,3 +82,20 @@ public domain. Credits: N. Megill (1994) and G. Mascellani (2019).
 
 [XITS Math font](https://fontlibrary.org/en/font/xits-math) is
 licenced under [Open Font Licence](https://openfontlicense.org/).
+
+# Continous Integration
+
+Every change pushed to this repository is verified by local
+Docker-based actions found in `.github/actions` folder. To run the
+same pipeline locally, first build the verifier image:
+
+```sh
+docker build -t verify-by-metamath-exe ./.github/actions/verify-by-metamath-exe
+```
+
+and then run verification:
+
+```sh
+docker run --user "$(id -u):$(id -g)" --rm --name verify-by-metamath-exe \
+           --volume .:/proofs verify-by-metamath-exe main.mm
+```
