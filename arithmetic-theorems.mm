@@ -11,7 +11,7 @@ $)
     es-121 $e \vdash ( \alpha \rightarrow \gamma ) $.
     es-122 $e substitutable t_1 , v_1 , \alpha $.
     es-123 $e substitution t_1 , v_1 , \alpha , \varphi $.
-    $( Axiom S9 from [Mendelson] p. 154 in inference form (Contributed by Boris
+    $( ~ ax-82 in inference form (Contributed by Boris
        Shminke, 18-Oct-2026.) $)
     pr-61 $p \vdash \varphi $=
       ( ax-2 ax-19 ax-48 ax-82 ax-6 pr-41 ) ADEFACMZENZAENZSEJOBTUAMIABCEGHPQQK
