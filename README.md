@@ -45,7 +45,7 @@ Metamath's largest proofs collection,
 complexities of proper substitition by applying ideas concieved by
 [Tarski](https://doi.org/10.1007/BF01972461) and developed by [Kalish
 and Montague](https://doi.org/10.1007/BF01969434),
-[Monk](doi.org/10.1007/BF01969435),
+[Monk](https://doi.org/10.1007/BF01969435),
 [Cocchiarella](https://doi.org/10.1305/ndjfl%2F1093893584), and later
 by [Megill](https://doi.org/10.1305/ndjfl%2F1040149359). It was not
 clear to me however how one _would_ (if had so chosen) express
@@ -82,3 +82,20 @@ public domain. Credits: N. Megill (1994) and G. Mascellani (2019).
 
 [XITS Math font](https://fontlibrary.org/en/font/xits-math) is
 licenced under [Open Font Licence](https://openfontlicense.org/).
+
+# Continous Integration
+
+Every change pushed to this repository is verified by local
+Docker-based actions found in `.github/actions` folder. To run the
+same pipeline locally, first build the verifier image:
+
+```sh
+docker build -t verify-by-metamath-exe ./.github/actions/verify-by-metamath-exe
+```
+
+and then run verification:
+
+```sh
+docker run --user "$(id -u):$(id -g)" --rm --name verify-by-metamath-exe \
+           --volume .:/proofs verify-by-metamath-exe main.mm
+```
