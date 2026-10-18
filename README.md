@@ -9,6 +9,8 @@ It is sometimes also called _substitutability_ (e.g. by
 [Enderton](https://doi.org/10.1016/C2009-0-22107-6)) or _proper
 substitution_ (e.g. by [Cocchiarella and
 Freund](https://doi.org/10.1093/acprof:oso/9780195366587.001.0001)).
+You can browse generated HTML representations of the proofs
+[here](https://inpefess.github.io/free-for-metamath/mmtheorems.html).
 
 # Why Metamath
 
@@ -83,11 +85,11 @@ public domain. Credits: N. Megill (1994) and G. Mascellani (2019).
 [XITS Math font](https://fontlibrary.org/en/font/xits-math) is
 licenced under [Open Font Licence](https://openfontlicense.org/).
 
-# Continous Integration
+# Continuous Integration
 
-Every change pushed to this repository is verified by local
-Docker-based actions found in `.github/actions` folder. To run the
-same pipeline locally, first build the verifier image:
+Every change pushed to this repository is verified and built by
+private Docker-based actions found in `.github/actions` folder. To
+run the same pipeline locally, first build the verifier image:
 
 ```sh
 docker build -t verify-by-metamath-exe ./.github/actions/verify-by-metamath-exe
@@ -99,3 +101,20 @@ and then run verification:
 docker run --user "$(id -u):$(id -g)" --rm --name verify-by-metamath-exe \
            --volume .:/proofs verify-by-metamath-exe main.mm
 ```
+
+To build HTML representation of the code, first build the Docker
+image:
+
+```sh
+docker build -t build-html-by-metamath-exe \
+             ./.github/actions/build-html-by-metamath-exe
+```
+
+and then run the build:
+
+```sh
+docker run --user "$(id -u):$(id -g)" --rm --name build-html-by-metamath-exe \
+           --volume .:/proofs build-html-by-metamath-exe main.mm
+```
+
+You can now open `build/html/mmtheorems.html` in your browser.

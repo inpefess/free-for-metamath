@@ -1,0 +1,10 @@
+name: "Build HTML by metamath-exe"
+inputs:
+  main-file:
+    description: 'Name of the main Metamath file'
+    required: true
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.main-file }}
