@@ -3,10 +3,10 @@ $(
   Equality axioms
 ###############################################################################
 
-_Salva veritate_, also known as substitutivity of equality (axiom A6 in
-[Mendelson] p. 93), i.e. the fact that substitution of a variable for another
-variable equal to it in any (and not necessary all) occurrences of a formula
-preserves its validity, is a bit tricky to write down fully formally.
+_Salva veritate_, or the substitutivity of equality (axiom A6 in [Mendelson] p.
+93), i.e. the fact that substitution of a variable for another variable equal
+to it in any (and not necessary all) occurrences of a formula preserves its
+validity, is challenging formalise fully.
 
 We will rely on Proposition 2.25 from [Mendelson] p. 95 stating that to have
 substitutivity, it's enough for the equality predicate to be reflexive, and
@@ -25,7 +25,7 @@ only (no constants), and ` t_2 ` is a result of the replacement of exactly one
 occurrence of ` v_1 ` in ` t_1 ` by ` v_2 `.
 
 Please notice that in these axioms schemata meta-variables are _not_ disjunct.
-We do that to avoid being even more repetitive.
+This approach is used to avoid further redundancy.
 
 One will have to add axioms for each kind of predicate and function necessary
 for a theory. We limit ourselves for those kinds that were defined previously.

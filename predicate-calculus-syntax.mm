@@ -8,10 +8,10 @@ $(
   Variables and term
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 
-Variables in textbooks on predicate calculus are actually meta-variables
+In predicate calculus textbooks, variables are treated as meta-variables
 ranging over real variables of predicate calculus. It makes no difference
-whether some variable is called ` v_1 ` or ` v_2 `. What is important however,
-is that variables with different names are indeed different variables.
+whether some variable is called ` v_1 ` or ` v_2 `. Crucially, however,
+variables with different names are indeed different variables.
 Substitution (sometimes called proper substitution) is typically governed by
 syntax-dependent rules, so we will explicitly (with a $d statement) ask
 Metamath not to substitute meta-variables ranging over predicate calculus
@@ -39,16 +39,16 @@ $(
   Functions
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 
-We do not define constants as a grammatical category. One can declare a
-Metamath constant and add an axiom that it is a term to introduce a new
-constant (like zero or empty set) to the theory language.
+We do not define constants as a grammatical category. A Metamath constant may
+be declared and an axiom that it is a term added to introduce a new constant
+(like zero or empty set) to the theory language.
 
 We define only unary functions in prefix and postfix notation, binary functions
 in prefix and infix notation, and ternary functions. If a theory contains
-functions with more arguments, one will need to extend this definition.
+functions with additional arguments, this definition must be extended.
 
-It is not necessary to use parentheses and commas for functions in prefix
-notation but we will do that for readability. We will do the same for
+While parentheses and commas are not strictly necessary for functions in prefix
+notation, they are used here for readability. We will do the same for
 predicates and meta-predicates in following sections.
 $)
   $v t_1 t_2 t_3 t_4 t_5 t_6 t_7 t_8 t_9 $.
@@ -169,7 +169,7 @@ $(
   Free variables
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 
-Enderton remarks that free variables need a precise definition and gives a
+Enderton notes that free variables require a precise definition and gives a
 recursive one in Chapter 2 of [Enderton] p. 76.
 
 From Metamath's perspective, freedom of a variable is yet another
@@ -295,12 +295,12 @@ $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 
 Enderton "officially" recursively defines substitution in Chapter 2 of
-[Enderton] p. 112. It sounds excessive for Metamath where substitution is a
-basic (and the only) operation. It's important to notice however, that
-Metamath's substitution is meta-theoretic: we substitute strings of symbols by
-other string of symbols without any concern for their possible meaning.
-Substitution for a variable "wherever it occurs free" assumes knowledge of
-theory's syntax.
+[Enderton] p. 112. Such a recursive definition may seem excessive for Metamath,
+as substitution is the fundamental - and only - operation. It is important to
+note, however, that, that Metamath's substitution is meta-theoretic: we
+substitute strings of symbols by other strings of symbols without any concern
+for their possible meaning. Substituting a variable "wherever it occurs free"
+assumes knowledge of the theory's syntax.
 
 Enderton defines substitution as a recursive function, and in Metamath, we
 define rules for a (meta-theoretic) predicate.
@@ -357,8 +357,8 @@ $(
 
 To define substitution on atomic formulas we need to know how to replace
 variables in terms. To distinguish this operation from Metamath's built-in
-substitution, we will call it "term replacement" and follow Exercise 1 from
-[Enderton] p. 129.
+substitution, it is referred to here as "term replacement" and follow Exercise
+1 from [Enderton] p. 129.
 
 ` term-replacement t_1 , v_1 , t_2 , t_3 ` means "replacement of ` v_1 ` by
 ` t_1 ` in ` t_2 ` gives ` t_3 `".
