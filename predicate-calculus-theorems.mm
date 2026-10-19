@@ -4,19 +4,19 @@ $(
 ###############################################################################
 
 Textbooks don't always make a distinction between theorems, meta-theorems, and
-theorem schemata. Similarly like no one usually proves that something is _not_
-a wff in Metamath, we can't prove even something as simple as
+theorem schemata. Similarly, as it is uncommon to prove that a string is _not_
+a wff in Metamath, we can not prove even something as simple as
 ` substitutable v_1 , v_1 , \alpha `. If we replace ` \alpha ` by an actual
 wff, however, the proof becomes a mundane application of the recursive
 definition of ` substitutable `. In fact, _improve_ command from _metamath-exe_
 can find such proofs automatically (but they are sometimes wrong because
 _improve_ does not account for disjoint variables.)
 
-In this section, we have intentionally added assumptions from meta-level to
-some provable assertions to highlight that although textbooks tend to always
-call them "theorems", sometimes, strictly speaking, they are not.
+In this section, meta-level assumptions have been intentionally added to
+certain provable assertions to highlight that while textbooks frequently label
+these as "theorems", they are not always so, strictly speaking.
 
-We don't define the existence quantifier, we replace it by
+The existential quantifier is not defined; instead, it is replaced by
 ` \lnot \forall v_1 \lnot `.
 $)
 

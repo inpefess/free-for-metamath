@@ -15,7 +15,7 @@ You can browse generated HTML representations of the proofs
 # Why Metamath
 
 Lifelong learners of logic might at some point want a computer system
-to verify some exercises they might be doing in a yet another logic
+to verify some exercises they might be doing in yet another logic
 they study. Popular interactive theorem provers like
 [Mizar](https://mizar.uwb.edu.pl/),
 [Isabelle](https://isabelle.in.tum.de/),
@@ -44,26 +44,26 @@ logic](https://us.metamath.org/qleuni/mmql.html).
 
 Metamath's largest proofs collection,
 [set.mm](https://github.com/metamath/set.mm), conscientiously avoids
-complexities of proper substitition by applying ideas concieved by
+complexities of proper substitution by applying ideas conceived by
 [Tarski](https://doi.org/10.1007/BF01972461) and developed by [Kalish
 and Montague](https://doi.org/10.1007/BF01969434),
 [Monk](https://doi.org/10.1007/BF01969435),
 [Cocchiarella](https://doi.org/10.1305/ndjfl%2F1093893584), and later
 by [Megill](https://doi.org/10.1305/ndjfl%2F1040149359). It was not
-clear to me however how one _would_ (if had so chosen) express
+clear to me however how one _would_ (if they had so chosen) express
 something like a Universal Instantiation schema including the notion
-of a term being free for a variable in a formula in Metamath.
-[Metamath manual](https://us.metamath.org/#book) only says that "it
-is possible to use the Metamath language to implement these concepts"
+of a term being free for a variable in a formula in Metamath. [The
+Metamath manual](https://us.metamath.org/#book) only says that "it is
+possible to use the Metamath language to implement these concepts"
 but doesn't give any details. It is true that `set.mm` defines proper
-substitition at some point, but _inside_ the theory. I haven't found
+substitution at some point, but _inside_ the theory. I haven't found
 any attempts to define substitutability or variable freedom in a way
 they are, as meta-theoretic notions (i.e. on the same level as `|-`
 and `wff`). So I decided to do it myself.
 
-Not only it happened to be possible in Metamath language, but it came
-so naturally that now I'm convinced Metamath was literally created
-for such things.
+Not only did it happen to be possible in Metamath language, but it
+came so naturally that now I'm convinced Metamath was literally
+created for such things.
 
 # Verified
 

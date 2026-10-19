@@ -3,14 +3,14 @@ $(
      Propositional theorems
 ###############################################################################
 
-We don't define symbols for disjunction, conjunction, and equivalence, we
-replace "` \alpha ` or ` \beta `" by ` ( \lnot \alpha \rightarrow \beta ) `,
+Symbols for disjunction, conjunction, and equivalence are not defined; instead,
+we replace "` \alpha ` or ` \beta `" by ` ( \lnot \alpha \rightarrow \beta ) `,
 "` \alpha ` and ` \beta `" by ` \lnot ( \alpha \rightarrow \lnot \beta ) `, and
 "` \alpha ` iff ` \beta `" by ` \lnot ( ( \alpha \rightarrow \beta )
 \rightarrow \lnot ( \beta \rightarrow \alpha ) ) ` in all statements.
 
-Some inference rules we write in their standard, "inference form" but also in
-so-called "deduction form" (Chapter 2 in [Megill] p. 97).
+Some inference rules are written in their standard, "inference form" but also
+in so-called "deduction form" (Chapter 2 in [Megill] p. 97).
 $)
   $( Lemma 1.8 from [Mendelson] p. 29 (Contributed by Boris Shminke,
      18-Oct-2026.) $)
