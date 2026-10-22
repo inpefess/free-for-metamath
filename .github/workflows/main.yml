@@ -11,6 +11,11 @@ jobs:
         id: verify-by-metamath-exe
         with:
           main-file: 'main.mm'
+      - name: Verify by metamath-knife
+        uses: ./.github/actions/verify-by-metamath-knife
+        id: verify-by-metamath-knife
+        with:
+          main-file: 'main.mm'
   build:
     runs-on: ubuntu-latest
     name: Build Metamath proof documentation

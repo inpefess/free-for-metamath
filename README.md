@@ -89,25 +89,22 @@ licenced under [Open Font Licence](https://openfontlicense.org/).
 
 Every change pushed to this repository is verified and built by
 private Docker-based actions found in `.github/actions` folder. To
-run the same pipeline locally, first build the verifier image:
+run the same pipeline locally, first build the necessary images:
 
 ```sh
-docker build -t verify-by-metamath-exe ./.github/actions/verify-by-metamath-exe
+./build-images.sh
 ```
 
-and then run verification:
+and then run verifiers:
 
 ```sh
-docker run --user "$(id -u):$(id -g)" --rm --name verify-by-metamath-exe \
-           --volume .:/proofs verify-by-metamath-exe main.mm
+./verify.sh
 ```
 
 To build HTML representation of the code, first build the Docker
 image:
 
 ```sh
-docker build -t build-html-by-metamath-exe \
-             ./.github/actions/build-html-by-metamath-exe
 ```
 
 and then run the build:
