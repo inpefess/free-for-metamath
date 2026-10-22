@@ -25,7 +25,7 @@ $)
     es-70 $e \vdash ( \forall v_1 \alpha \rightarrow \beta ) $.
     $( Example 1 from [Mendelson] p. 71 (Contributed by Boris Shminke,
        18-Oct-2026.) $)
-    pr-36 $p \vdash \forall v_1 \beta $=
+    pr-37 $p \vdash \forall v_1 \beta $=
       ( ax-19 ax-48 ax-6 ) BCACFBACDGEHG $.
   $}
 
@@ -37,7 +37,7 @@ $)
     es-74 $e substitution v_2 , v_2 , \alpha , \alpha $.
     $( Example 1 from [Mendelson] p. 72 (Contributed by Boris Shminke,
        18-Oct-2026.) $)
-    pr-37 $p \vdash ( \forall v_1 \forall v_2 \alpha \rightarrow \forall v_2
+    pr-38 $p \vdash ( \forall v_1 \forall v_2 \alpha \rightarrow \forall v_2
     \forall v_1 \alpha ) $=
       ( ax-19 ax-2 ax-7 ax-29 ax-33 ax-46 pr-3 ax-48 ax-23 ax-47 ax-6 ax-24 ) A
       CHZBHZABHZIZCHUAUBCHIUCCUAAIZBHUCUDBUATATTBBJZABCUEDKAABCUEELMAACCJFGMNOU
@@ -51,7 +51,7 @@ $)
     es-78 $e substitution v_1 , v_1 , \beta , \beta $.
     $( Exercise 2.27.a from [Mendelson] p. 73 (Contributed by Boris Shminke,
        18-Oct-2026.) $)
-    pr-38 $p \vdash ( \forall v_1 ( \alpha \rightarrow \beta ) \rightarrow (
+    pr-39 $p \vdash ( \forall v_1 ( \alpha \rightarrow \beta ) \rightarrow (
     \forall v_1 \alpha \rightarrow \forall v_1 \beta ) ) $=
       ( ax-2 ax-19 ax-7 ax-27 ax-31 ax-46 pr-18 pr-6 pr-3 ax-48 ax-23 ax-47
       ax-6 ) ABHZCIZACIZBHZCIZUCBCIHUBUDHZCIUBUEHUFCUBUAUDUAUACCJZABCUGDFKABABC
@@ -65,11 +65,11 @@ $)
     es-82 $e substitution v_1 , v_1 , \beta , \beta $.
     $( Exercise 2.27.b from [Mendelson] p. 73 (Contributed by Boris Shminke,
        18-Oct-2026.) $)
-    pr-39 $p \vdash ( \forall v_1 ( \alpha \rightarrow \beta ) \rightarrow (
+    pr-40 $p \vdash ( \forall v_1 ( \alpha \rightarrow \beta ) \rightarrow (
     \lnot \forall v_1 \lnot \alpha \rightarrow \lnot \forall v_1 \lnot \beta )
     ) $=
-      ( ax-1 ax-19 ax-2 pr-10 ax-48 ax-7 ax-27 ax-31 ax-26 ax-30 pr-38 ax-6
-      pr-3 pr-33 ) BHZCIZAHZCIZABJZCIZUGUBUDJZCIZUCUEJUFUHJZCIUGUIJUJCABKLUFUHC
+      ( ax-1 ax-19 ax-2 pr-10 ax-48 ax-7 ax-27 ax-31 ax-26 ax-30 pr-39 ax-6
+      pr-3 pr-34 ) BHZCIZAHZCIZABJZCIZUGUBUDJZCIZUCUEJUFUHJZCIUGUIJUJCABKLUFUHC
       ABCCMZDFNABABCUKEGOUBUDCUKBCUKFPZACUKDPZNUBUDUBUDCUKBBCUKGQZAACUKEQZORSUB
       UDCULUNUMUORTUA $.
   $}
@@ -81,13 +81,13 @@ $)
     es-86 $e substitution v_1 , v_1 , \beta , \beta $.
     $( Exercise 2.27.c from [Mendelson] p. 73 (Contributed by Boris Shminke,
        18-Oct-2026.) $)
-    pr-40 $p \vdash \lnot ( ( \forall v_1 \lnot ( \alpha \rightarrow \lnot
+    pr-41 $p \vdash \lnot ( ( \forall v_1 \lnot ( \alpha \rightarrow \lnot
     \beta ) \rightarrow \lnot ( \forall v_1 \alpha \rightarrow \lnot \forall
     v_1 \beta ) ) \rightarrow \lnot ( \lnot ( \forall v_1 \alpha \rightarrow
     \lnot \forall v_1 \beta ) \rightarrow \forall v_1 \lnot ( \alpha
     \rightarrow \lnot \beta ) ) ) $=
-      ( ax-19 ax-1 ax-2 pr-15 ax-46 pr-3 pr-16 pr-26 ax-48 ax-26 ax-30 pr-38
-      ax-6 ax-7 ax-27 ax-31 pr-19 ax-23 ax-21 ax-22 ax-47 ) ACHZBCHZIZJZIZABIZJ
+      ( ax-19 ax-1 ax-2 pr-15 ax-46 pr-3 pr-16 pr-27 ax-48 ax-26 ax-30 pr-39
+      ax-6 ax-7 ax-27 ax-31 pr-20 ax-23 ax-21 ax-22 ax-47 ) ACHZBCHZIZJZIZABIZJ
       ZIZJZCHZUPCHZUMJZUMUSJZIJIUQCABUMUMUIAUIUJKAACCUAZDELMUMUJBUIUJNBBCVBFGLM
       OPUTVAURUTURUIUJUSUPAJZCHUSUIJVCCABKPUPACUOCVBAUNCVBDBCVBFQUBQZUOUOCVBAUN
       AUNCVBEBBCVBGRUCRZDESTUPBJZCHUSUJJVFCABNPUPBCVDVEFGSTOUDUMUPCULCUIUKCACUE
@@ -100,7 +100,7 @@ $)
     es-89 $e substitution t_1 , v_1 , \alpha , \beta $.
     $( Particularization Rule A4 from [Mendelson] p. 74 (Contributed by Boris
        Shminke, 18-Oct-2026.) $)
-    pr-41 $p \vdash \beta $=
+    pr-42 $p \vdash \beta $=
       ( ax-19 ax-46 ax-6 ) ACHBEABCDFGIJ $.
   $}
 
@@ -110,7 +110,7 @@ $)
     es-92 $e substitution t_1 , v_1 , \alpha , \beta $.
     $( Particularization Rule A4 from [Mendelson] p. 74 in deduction form
        (Contributed by Boris Shminke, 18-Oct-2026.) $)
-    pr-42 $p \vdash ( \varphi \rightarrow \beta ) $=
+    pr-43 $p \vdash ( \varphi \rightarrow \beta ) $=
       ( ax-19 ax-46 pr-3 ) CADIBFABDEGHJK $.
   $}
 
@@ -120,8 +120,8 @@ $)
     es-95 $e substitution t_1 , v_1 , \alpha , \beta $.
     $( Existential Rule E4 from [Mendelson] p. 74 in deduction form
        (Contributed by Boris Shminke, 18-Oct-2026.) $)
-    pr-43 $p \vdash ( \varphi \rightarrow \lnot \forall v_1 \lnot \alpha ) $=
-      ( ax-1 ax-19 ax-2 pr-7 ax-26 ax-30 pr-42 pr-19 pr-35 pr-20 ) BAIZDJZIZCFU
+    pr-44 $p \vdash ( \varphi \rightarrow \lnot \forall v_1 \lnot \alpha ) $=
+      ( ax-1 ax-19 ax-2 pr-7 ax-26 ax-30 pr-43 pr-20 pr-36 pr-21 ) BAIZDJZIZCFU
       ABCUAIZBIZKCSUCUBDETLADEGMABDEHNOPQR $.
   $}
 
@@ -130,18 +130,18 @@ $)
     es-97 $e substitution v_1 , v_1 , \alpha , \alpha $.
     $( Example 1 from [Mendelson] p. 74 (Contributed by Boris Shminke,
        18-Oct-2026.) $)
-    pr-44 $p \vdash ( \forall v_1 \alpha \rightarrow \lnot \forall v_1 \lnot
+    pr-45 $p \vdash ( \forall v_1 \alpha \rightarrow \lnot \forall v_1 \lnot
     \alpha ) $=
-      ( ax-19 ax-7 ax-46 pr-43 ) AAABEBBFZAABICDGCDH $.
+      ( ax-19 ax-7 ax-46 pr-44 ) AAABEBBFZAABICDGCDH $.
   $}
 
   ${
     $d v_1 v_2 $.
     $( Exercise 2.31.a from [Mendelson] p. 75 (Contributed by Boris Shminke,
        18-Oct-2026.) $)
-    pr-45 $p \vdash ( \forall v_1 \forall v_2 A_1^2 ( v_1 , v_2 ) \rightarrow
+    pr-46 $p \vdash ( \forall v_1 \forall v_2 A_1^2 ( v_1 , v_2 ) \rightarrow
     \forall v_1 A_1^2 ( v_1 , v_1 ) ) $=
-      ( ax-15 ax-13 ax-19 ax-25 ax-29 ax-35 ax-34 ax-42 ax-33 ax-46 pr-42 ax-48
+      ( ax-15 ax-13 ax-19 ax-25 ax-29 ax-35 ax-34 ax-42 ax-33 ax-46 pr-43 ax-48
       ax-7 ax-2 ax-23 ax-47 ax-6 ) APZBPZCDZEZBFZAFZUAUACDEZQZAFUFUGAFQUHAUDUGU
       FBUAUEUEAUAUDABUAAUAUCGHUDUDABUAAUAUAUAUBUBCAUAIAUAUBJKLMBUAUCGBUAUAUAUBU
       ACBUAUAJBUAIKNOUFUGAUEARST $.
@@ -154,9 +154,9 @@ $)
     es-101 $e substitution v_1 , v_1 , \beta , \beta $.
     $( Exercise 2.31.b from [Mendelson] p. 75 (Contributed by Boris Shminke,
        18-Oct-2026.) $)
-    pr-46 $p \vdash ( ( \lnot \forall v_1 \alpha \rightarrow \forall v_1 \beta
+    pr-47 $p \vdash ( ( \lnot \forall v_1 \alpha \rightarrow \forall v_1 \beta
     ) \rightarrow \forall v_1 ( \lnot \alpha \rightarrow \beta ) ) $=
-      ( ax-19 ax-1 ax-2 pr-10 ax-7 ax-46 pr-31 pr-32 pr-30 pr-26 pr-34 ax-23
+      ( ax-19 ax-1 ax-2 pr-10 ax-7 ax-46 pr-32 pr-33 pr-31 pr-27 pr-35 ax-23
       pr-3 ax-48 ax-21 ax-22 ax-47 ax-6 ) ACHZIZBCHZJZAIBJZJZCHUIUJCHJUKCUIUHIZ
       UGIJZUJUGUHKUJUMULUGUJIUHUJABUHBBCCLZFGMNOUFUJABUFAACUNDEMPOQRTUAUIUJCUGU
       HCUFCACSUBBCSUCUDUE $.
@@ -169,9 +169,9 @@ $)
     es-105 $e substitution v_1 , v_1 , \beta , \beta $.
     $( Exercise 2.31.d from [Mendelson] p. 75 (Contributed by Boris Shminke,
        18-Oct-2026.) $)
-    pr-47 $p \vdash ( \forall v_1 \alpha \rightarrow \forall v_1 ( \lnot
+    pr-48 $p \vdash ( \forall v_1 \alpha \rightarrow \forall v_1 ( \lnot
     \alpha \rightarrow \beta ) ) $=
-      ( ax-1 ax-2 ax-19 pr-13 ax-48 ax-7 ax-26 ax-27 ax-30 ax-31 pr-38 ax-6 ) A
+      ( ax-1 ax-2 ax-19 pr-13 ax-48 ax-7 ax-26 ax-27 ax-30 ax-31 pr-39 ax-6 ) A
       AHZBIZIZCJACJUACJIUBCABKLAUACDETBCCMZACUCDNFOTBTBCUCAACUCEPGQRS $.
   $}
 
@@ -179,11 +179,11 @@ $)
     $d v_1 v_2 $.
     $( Exercise 2.31.e from [Mendelson] p. 75 (Contributed by Boris Shminke,
        18-Oct-2026.) $)
-    pr-48 $p \vdash ( \forall v_1 \forall v_2 ( A_1^2 ( v_1 , v_2 ) \rightarrow
+    pr-49 $p \vdash ( \forall v_1 \forall v_2 ( A_1^2 ( v_1 , v_2 ) \rightarrow
     \lnot A_1^2 ( v_2 , v_1 ) ) \rightarrow \forall v_1 \lnot A_1^2 ( v_1 , v_1
     ) ) $=
       ( ax-15 ax-13 ax-19 ax-25 ax-26 ax-27 ax-34 ax-35 ax-42 ax-30 ax-31 ax-46
-      ax-7 ax-1 ax-2 pr-7 pr-26 pr-34 pr-3 ax-48 ax-29 ax-33 pr-38 ax-6 ) APZBP
+      ax-7 ax-1 ax-2 pr-7 pr-27 pr-35 pr-3 ax-48 ax-29 ax-33 pr-39 ax-6 ) APZBP
       ZCDZEZUIUHCDZEZQZRZBFZUHUHCDZEZQZRZAFUPAFUSAFRUTAUPURUSRZUSUOVABUHUKUNBUH
       BUHUJGUMBUHBUHULGHIUKUNURUSBUHBUHUHUHUIUHCBUHUHJZBUHKZLUMURBUHBUHUIUHUHUH
       CVCVBLMNOUSVAURURUSQURSZVDTUAUBUCUPUSAUOABUHUKUNAUHAUHUJGUMAUHAUHULGHIUDU

@@ -13,8 +13,8 @@ $)
     es-123 $e substitution t_1 , v_1 , \alpha , \varphi $.
     $( ~ ax-82 in inference form (Contributed by Boris Shminke,
        18-Oct-2026.) $)
-    pr-61 $p \vdash \varphi $=
-      ( ax-2 ax-19 ax-48 ax-82 ax-6 pr-41 ) ADEFACMZENZAENZSEJOBTUAMIABCEGHPQQK
+    pr-62 $p \vdash \varphi $=
+      ( ax-2 ax-19 ax-48 ax-82 ax-6 pr-42 ) ADEFACMZENZAENZSEJOBTUAMIABCEGHPQQK
       LR $.
   $}
 
@@ -22,9 +22,9 @@ $)
     $d v_1 v_2 $.  $d v_1 t_2 $.  $d v_2 t_1 $.
     $( Lemma 3.1.S2 from [Mendelson] p. 155 (Contributed by Boris Shminke,
        18-Oct-2026.) $)
-    pr-62 $p \vdash ( t_1 = t_2 \rightarrow t_1 ' = t_2 ' ) $=
+    pr-63 $p \vdash ( t_1 = t_2 \rightarrow t_1 ' = t_2 ' ) $=
       ( ax-49 ax-16 ax-13 ax-73 ax-48 ax-25 ax-27 ax-34 ax-35 ax-43 ax-37 ax-31
-      fl-5 fl-6 ax-7 ax-9 ax-2 pr-41 ax-64 ) OQZBCDZEZUBFRZBFRZCDZEZSZABCDEZAFR
+      fl-5 fl-6 ax-7 ax-9 ax-2 pr-42 ax-64 ) OQZBCDZEZUBFRZBFRZCDZEZSZABCDEZAFR
       ZUFCDEZSOAUIOUBPQZCDZEZUEUMFRZCDZEZSZUIPBUSPOPFUAGUOURPBPBUNHPBUQHIUOURUD
       UHPBPBUBUBUMBCPBUBJZPBKZLPBUEUEUPUFCPBUBUBFUTMPBUMBFVAMLNTGUDUHOAOAUCHOAU
       GHIUDUHUJULOAOAUBABBCOAKZOABJZLOAUEUKUFUFCOAUBAFVBMOABBFVCMLNT $.
@@ -32,18 +32,18 @@ $)
 
   $( Lemma 3.1.S3 from [Mendelson] p. 155 (Contributed by Boris Shminke,
      18-Oct-2026.) $)
-  pr-63 $p \vdash \lnot 0 = t_1 ' $=
+  pr-64 $p \vdash \lnot 0 = t_1 ' $=
     ( fl-5 ax-72 ax-7 ax-73 ax-9 ax-49 ax-16 ax-13 ax-1 ax-76 ax-48 ax-25 ax-26
-    ax-34 ax-35 ax-37 ax-43 ax-30 pr-41 ) CBDZEFZGHZIZJZCAEFZGHIZJBAUEBBKLUDBAB
+    ax-34 ax-35 ax-37 ax-43 ax-30 pr-42 ) CBDZEFZGHZIZJZCAEFZGHIZJBAUEBBKLUDBAB
     AUCMNUDUGBABACCUBUFGBACOBAUAAEBAPQRST $.
 
   ${
     $d v_1 v_2 $.  $d v_1 t_2 $.  $d v_2 t_1 $.
     $( Lemma 3.1.S4 from [Mendelson] p. 155 (Contributed by Boris Shminke,
        18-Oct-2026.) $)
-    pr-64 $p \vdash ( t_1 ' = t_2 ' \rightarrow t_1 = t_2 ) $=
+    pr-65 $p \vdash ( t_1 ' = t_2 ' \rightarrow t_1 = t_2 ) $=
       ( ax-73 ax-49 ax-16 ax-13 ax-48 ax-25 ax-27 ax-34 ax-37 ax-35 ax-43 ax-31
-      fl-5 fl-6 ax-7 ax-9 ax-2 pr-41 ax-77 ) OQZCRZBCRZDEZFZUBBDEZFZSZACRZUDDEF
+      fl-5 fl-6 ax-7 ax-9 ax-2 pr-42 ax-77 ) OQZCRZBCRZDEZFZUBBDEZFZSZACRZUDDEF
       ZABDEFZSOAUIOUCPQZCRZDEZFZUBUMDEZFZSZUIPBUSPOPUAGUPURPBPBUOHPBUQHIUPURUFU
       HPBPBUCUCUNUDDPBUBUBCPBUBJZKPBUMBCPBLZKMPBUBUBUMBDUTVAMNTGUFUHOAOAUEHOAUG
       HIUFUHUKULOAOAUCUJUDUDDOAUBACOALZKOABBCOABJZKMOAUBABBDVBVCMNT $.
@@ -51,18 +51,18 @@ $)
 
   $( Lemma 3.1.S5 from [Mendelson] p. 155 (Contributed by Boris Shminke,
      18-Oct-2026.) $)
-  pr-65 $p \vdash ( t_1 + 0 ) = t_1 $=
+  pr-66 $p \vdash ( t_1 + 0 ) = t_1 $=
     ( ax-72 ax-74 ax-11 ax-49 ax-16 ax-13 ax-78 ax-48 ax-25 ax-35 ax-34 ax-39
-    fl-5 ax-7 ax-43 pr-41 ) NOZBCDZREFZGZABCDZAEFGNAUANNHINATJNASUBRAENARABBCNA
+    fl-5 ax-7 ax-43 pr-42 ) NOZBCDZREFZGZABCDZAEFGNAUANNHINATJNASUBRAENARABBCNA
     KZNABLMUCPQ $.
 
   ${
     $d v_1 v_2 $.  $d v_1 t_2 $.  $d v_2 t_1 $.
     $( Lemma 3.1.S6 from [Mendelson] p. 155 (Contributed by Boris Shminke,
        18-Oct-2026.) $)
-    pr-66 $p \vdash ( t_1 + t_2 ' ) = ( t_1 + t_2 ) ' $=
+    pr-67 $p \vdash ( t_1 + t_2 ' ) = ( t_1 + t_2 ) ' $=
       ( ax-73 ax-74 ax-11 ax-49 ax-16 ax-13 ax-48 ax-25 ax-34 ax-35 ax-37 ax-39
-      fl-5 fl-6 ax-7 ax-9 ax-43 pr-41 ax-79 ) OQZBCRZDEZUBBDEZCRZFGZHZAUCDEZABD
+      fl-5 fl-6 ax-7 ax-9 ax-43 pr-42 ax-79 ) OQZBCRZDEZUBBDEZCRZFGZHZAUCDEZABD
       EZCRZFGHOAUHOUBPQZCRZDEZUBULDEZCRZFGZHZUHPBURPOPUAIPBUQJPBUNUDUPUFFPBUBUB
       UMUCDPBUBKZPBULBCPBLZMNPBUOUECPBUBUBULBDUSUTNMSTIOAUGJOAUDUIUFUKFOAUBAUCU
       CDOALZOABBCOABKZMNOAUEUJCOAUBABBDVAVBNMST $.
@@ -70,18 +70,18 @@ $)
 
   $( Lemma 3.1.S7 from [Mendelson] p. 155 (Contributed by Boris Shminke,
      18-Oct-2026.) $)
-  pr-67 $p \vdash ( t_1 \times 0 ) = 0 $=
+  pr-68 $p \vdash ( t_1 \times 0 ) = 0 $=
     ( ax-72 ax-75 ax-11 ax-49 ax-16 ax-13 ax-80 ax-48 ax-25 ax-35 ax-34 ax-39
-    fl-5 ax-7 ax-43 pr-41 ) NOZBCDZBEFZGZABCDZBEFGNAUANNHINATJNASUBBBENARABBCNA
+    fl-5 ax-7 ax-43 pr-42 ) NOZBCDZBEFZGZABCDZBEFGNAUANNHINATJNASUBBBENARABBCNA
     KNABLZMUCPQ $.
 
   ${
     $d v_1 v_2 $.  $d v_1 t_2 $.  $d v_2 t_1 $.
     $( Lemma 3.1.S8 from [Mendelson] p. 155 (Contributed by Boris Shminke,
        18-Oct-2026.) $)
-    pr-68 $p \vdash ( t_1 \times t_2 ' ) = ( ( t_1 \times t_2 ) + t_1 ) $=
+    pr-69 $p \vdash ( t_1 \times t_2 ' ) = ( ( t_1 \times t_2 ) + t_1 ) $=
       ( ax-73 ax-75 ax-11 ax-74 ax-49 ax-16 ax-13 ax-48 ax-25 ax-34 ax-35 ax-37
-      fl-5 fl-6 ax-7 ax-9 ax-39 ax-43 ax-81 pr-41 ) OQZBCRZDEZUCBDEZUCFEZGHZIZA
+      fl-5 fl-6 ax-7 ax-9 ax-39 ax-43 ax-81 pr-42 ) OQZBCRZDEZUCBDEZUCFEZGHZIZA
       UDDEZABDEZAFEZGHIOAUIOUCPQZCRZDEZUCUMDEZUCFEZGHZIZUIPBUSPOPUAJPBURKPBUOUE
       UQUGGPBUCUCUNUDDPBUCLZPBUMBCPBMZNSPBUPUFUCUCFPBUCUCUMBDUTVASUTSTUBJOAUHKO
       AUEUJUGULGOAUCAUDUDDOAMZOABBCOABLZNSOAUFUKUCAFOAUCABBDVBVCSVBSTUB $.
@@ -92,9 +92,9 @@ $)
     $d v_3 t_2 $.  $d v_1 v_2 v_3 $.
     $( Proposition 3.2.e from [Mendelson] p. 155.  (Contributed by Boris
        Shminke, 18-Oct-2026.) $)
-    pr-69 $p \vdash ( t_1 = t_2 \rightarrow ( t_1 + t_3 ) = ( t_2 + t_3 ) ) $=
+    pr-70 $p \vdash ( t_1 = t_2 \rightarrow ( t_1 + t_3 ) = ( t_2 + t_3 ) ) $=
       ( ax-49 ax-16 ax-13 ax-74 ax-11 ax-48 ax-25 ax-27 ax-34 ax-43 ax-35 ax-39
-      fl-5 fl-6 fl-7 ax-7 ax-2 ax-67 ax-31 pr-41 ) PSZBDEZFZUDCGHZBCGHZDEZFZTZA
+      fl-5 fl-6 fl-7 ax-7 ax-2 ax-67 ax-31 pr-42 ) PSZBDEZFZUDCGHZBCGHZDEZFZTZA
       BDEFZACGHZUHDEFZTPAUKPUDQSZDEZFZUGUOCGHZDEZFZTZUKQBVAQUQUDRSZGHZUOVBGHZDE
       ZFZTZVARCVGRPQRGUAIUQVFRCRCUPJRCVEJKUQVFUQUTRCRCUDUDUOUODRCUDLZRCUOLZMRCV
       CUGVDURDRCUDUDVBCGVHRCNZORCUOUOVBCGVIVJOMUBUCIUQUTQBQBUPJQBUSJKUQUTUFUJQB
@@ -105,9 +105,9 @@ $)
 
   $( Proposition 3.2.f from [Mendelson] p. 155 (Contributed by Boris Shminke,
      18-Oct-2026.) $)
-  pr-70 $p \vdash t_1 = ( 0 + t_1 ) $=
-    ( ax-72 ax-74 ax-11 ax-49 ax-16 ax-13 ax-73 ax-35 ax-34 ax-39 ax-43 pr-65
-    fl-5 ax-7 ax-9 pr-51 pr-62 pr-58 pr-66 pr-6 pr-3 ax-25 pr-61 ) NOZBUECDZEFZ
+  pr-71 $p \vdash t_1 = ( 0 + t_1 ) $=
+    ( ax-72 ax-74 ax-11 ax-49 ax-16 ax-13 ax-73 ax-35 ax-34 ax-39 ax-43 pr-66
+    fl-5 ax-7 ax-9 pr-52 pr-63 pr-59 pr-67 pr-6 pr-3 ax-25 pr-62 ) NOZBUECDZEFZ
     GZBBBCDZEFGUEHPZBUJCDZEFGZABACDZEFGNANBUEBUFUIENBIZNBBBUEBCNBBJUNKLNUJUEUJU
     FUKENUJIZNUJBBUEUJCNUJBJUOKLUIBBMQUHUJUFHPZEFGZULUEUFRUQUKUPEFGULUJUPUKSBUE
     TUAUBNAUGUCNAUEAUFUMENAIZNABBUEACNABJURKLUD $.
@@ -116,9 +116,9 @@ $)
     $d v_2 t_1 $.
     $( Proposition 3.2.g from [Mendelson] p. 155 (Contributed by Boris Shminke,
        18-Oct-2026.) $)
-    pr-71 $p \vdash ( t_1 ' + t_2 ) = ( t_1 + t_2 ) ' $=
+    pr-72 $p \vdash ( t_1 ' + t_2 ) = ( t_1 + t_2 ) ' $=
       ( ax-73 ax-74 ax-11 ax-49 ax-16 ax-13 ax-72 ax-34 ax-37 ax-35 ax-39 ax-43
-      fl-6 ax-9 pr-65 pr-62 ax-6 pr-66 ax-7 pr-51 pr-54 pr-58 pr-53 ax-25 pr-61
+      fl-6 ax-9 pr-66 pr-63 ax-6 pr-67 ax-7 pr-52 pr-55 pr-59 pr-54 ax-25 pr-62
       pr-6 pr-3 ax-2 ) ACPZOUAZDEZAULDEZCPZFGZHZUKIDEZAIDEZCPZFGHUKULCPZDEZAVAD
       EZCPZFGHZUKBDEZABDEZCPZFGHOBOIUMURUOUTFOIUKUKULIDOIAACOIAJZKOILZMOIUNUSCO
       IAAULIDVIVJMKNOVAUMVBUOVDFOVAUKUKULVADOVAAACOVAAJZKOVALZMOVAUNVCCOVAAAULV
@@ -131,9 +131,9 @@ $)
     $d v_2 t_1 $.
     $( Proposition 3.2.h from [Mendelson] p. 155 (Contributed by Boris Shminke,
        18-Oct-2026.) $)
-    pr-72 $p \vdash ( t_1 + t_2 ) = ( t_2 + t_1 ) $=
-      ( ax-74 ax-11 ax-49 ax-16 ax-13 ax-72 ax-73 ax-34 ax-35 ax-39 ax-43 pr-65
-      fl-6 ax-7 ax-9 pr-70 pr-54 pr-3 pr-62 pr-66 pr-53 pr-58 pr-71 ax-25 pr-61
+    pr-73 $p \vdash ( t_1 + t_2 ) = ( t_2 + t_1 ) $=
+      ( ax-74 ax-11 ax-49 ax-16 ax-13 ax-72 ax-73 ax-34 ax-35 ax-39 ax-43 pr-66
+      fl-6 ax-7 ax-9 pr-71 pr-55 pr-3 pr-63 pr-67 pr-54 pr-59 pr-72 ax-25 pr-62
       ax-2 ax-6 pr-6 ) AOPZCDZUKACDZEFZGZAHCDZHACDZEFGAUKIQZCDZURACDZEFGZABCDZB
       ACDZEFGOBOHULUPUMUQEOHAAUKHCOHAJZOHKZLOHUKHAACVEVDLMOURULUSUMUTEOURAAUKUR
       COURAJZOURKZLOURUKURAACVGVFLMUPAUQANARSUOULIQZUMIQZEFGZVAULUMUAVJUSVIEFGZ
@@ -143,8 +143,8 @@ $)
 
   $( Proposition 3.2.i from [Mendelson] p. 155.  (Contributed by Boris Shminke,
      18-Oct-2026.) $)
-  pr-73 $p \vdash ( t_1 = t_2 \rightarrow ( t_3 + t_1 ) = ( t_3 + t_2 ) ) $=
-    ( ax-49 ax-16 ax-13 ax-74 ax-11 pr-69 pr-53 pr-72 pr-6 ax-2 ax-6 pr-3 ) ABD
+  pr-74 $p \vdash ( t_1 = t_2 \rightarrow ( t_3 + t_1 ) = ( t_3 + t_2 ) ) $=
+    ( ax-49 ax-16 ax-13 ax-74 ax-11 pr-70 pr-54 pr-73 pr-6 ax-2 ax-6 pr-3 ) ABD
     EFACGHZBCGHZDEFZCAGHZCBGHZDEFZABCIRPTDEFZUARQTDEFUBPQTJBCKLSPDEFUBUAMCAKSPT
     JNOO $.
 
@@ -152,9 +152,9 @@ $)
     $d v_3 t_1 $.  $d v_3 t_2 $.
     $( Proposition 3.2.j from [Mendelson] p. 155.  (Contributed by Boris
        Shminke, 18-Oct-2026.) $)
-    pr-74 $p \vdash ( ( t_1 + t_2 ) + t_3 ) = ( t_1 + ( t_2 + t_3 ) ) $=
-      ( ax-74 ax-11 ax-49 ax-16 ax-13 ax-72 ax-73 ax-34 ax-39 ax-35 ax-43 pr-65
-      fl-7 ax-9 pr-51 ax-6 pr-66 ax-7 pr-73 pr-54 pr-62 pr-53 pr-6 ax-25 pr-61
+    pr-75 $p \vdash ( ( t_1 + t_2 ) + t_3 ) = ( t_1 + ( t_2 + t_3 ) ) $=
+      ( ax-74 ax-11 ax-49 ax-16 ax-13 ax-72 ax-73 ax-34 ax-39 ax-35 ax-43 pr-66
+      fl-7 ax-9 pr-52 ax-6 pr-67 ax-7 pr-74 pr-55 pr-63 pr-54 pr-6 ax-25 pr-62
       ax-2 pr-3 ) ABDEZPUAZDEZABULDEZDEZFGZHZUKIDEZABIDEZDEZFGHUKULJQZDEZABVADE
       ZDEZFGHZUKCDEZABCDEZDEZFGHPCPIUMURUOUTFPIUKUKULIDPIAABBDPIAKZPIBKZLPIMZLP
       IAAUNUSDVIPIBBULIDVJVKLLNPVAUMVBUOVDFPVAUKUKULVADPVAAABBDPVAAKZPVABKZLPVA
@@ -169,10 +169,10 @@ $)
     $d v_2 t_3 $.  $d v_1 v_2 v_3 $.
     $( Proposition 3.2.k from [Mendelson] p. 156.  (Contributed by Boris
        Shminke, 18-Oct-2026.) $)
-    pr-75 $p \vdash ( t_1 = t_2 \rightarrow ( t_1 \times t_3 ) = ( t_2 \times
+    pr-76 $p \vdash ( t_1 = t_2 \rightarrow ( t_1 \times t_3 ) = ( t_2 \times
     t_3 ) ) $=
       ( ax-49 ax-16 ax-13 ax-75 ax-11 ax-48 ax-25 ax-27 ax-34 ax-43 ax-35 ax-39
-      fl-5 fl-6 fl-7 ax-7 ax-2 ax-67 ax-31 pr-41 ) PSZBDEZFZUDCGHZBCGHZDEZFZTZA
+      fl-5 fl-6 fl-7 ax-7 ax-2 ax-67 ax-31 pr-42 ) PSZBDEZFZUDCGHZBCGHZDEZFZTZA
       BDEFZACGHZUHDEFZTPAUKPUDQSZDEZFZUGUOCGHZDEZFZTZUKQBVAQUQUDRSZGHZUOVBGHZDE
       ZFZTZVARCVGRPQRGUAIUQVFRCRCUPJRCVEJKUQVFUQUTRCRCUDUDUOUODRCUDLZRCUOLZMRCV
       CUGVDURDRCUDUDVBCGVHRCNZORCUOUOVBCGVIVJOMUBUCIUQUTQBQBUPJQBUSJKUQUTUFUJQB
@@ -183,9 +183,9 @@ $)
 
   $( Proposition 3.2.l from [Mendelson] p. 156.  (Contributed by Boris Shminke,
      18-Oct-2026.) $)
-  pr-76 $p \vdash ( 0 \times t_1 ) = 0 $=
+  pr-77 $p \vdash ( 0 \times t_1 ) = 0 $=
     ( fl-5 ax-72 ax-7 ax-75 ax-11 ax-49 ax-16 ax-13 ax-73 ax-9 ax-34 ax-35 ax-2
-    ax-39 ax-43 pr-67 ax-74 pr-68 pr-65 pr-54 pr-53 ax-6 ax-25 pr-61 ) CBDZEFZC
+    ax-39 ax-43 pr-68 ax-74 pr-69 pr-66 pr-55 pr-54 ax-6 ax-25 pr-62 ) CBDZEFZC
     GHZIZCCEFZCGHICUFJKZEFZCGHIZCAEFZCGHIBABCUGUJCCGBCCCUFCEBCCLZBCMOUOPBUKUGUL
     CCGBUKCCUFUKEBUKCLZBUKMOUPPCQULUGGHIUIUMNULUGCRFUGCUFSUGTUAULUGCUBUCBAUHUDB
     AUGUNCCGBACCUFAEBACLZBAMOUQPUE $.
@@ -194,10 +194,10 @@ $)
     $d v_2 t_1 $.
     $( Proposition 3.2.m from [Mendelson] p. 156.  (Contributed by Boris
        Shminke, 18-Oct-2026.) $)
-    pr-77 $p \vdash ( t_1 ' \times t_2 ) = ( ( t_1 \times t_2 ) + t_2 ) $=
+    pr-78 $p \vdash ( t_1 ' \times t_2 ) = ( ( t_1 \times t_2 ) + t_2 ) $=
       ( ax-73 ax-75 ax-11 ax-74 ax-49 ax-16 ax-13 ax-72 ax-34 ax-37 ax-35 ax-39
-      fl-6 ax-9 ax-43 pr-53 ax-6 pr-3 pr-67 pr-65 pr-54 pr-59 pr-69 pr-74 pr-72
-      ax-7 pr-73 pr-68 pr-51 pr-6 pr-52 pr-62 ax-2 pr-66 ax-25 pr-61 ) ACPZOUHZ
+      fl-6 ax-9 ax-43 pr-54 ax-6 pr-3 pr-68 pr-66 pr-55 pr-60 pr-70 pr-75 pr-73
+      ax-7 pr-74 pr-69 pr-52 pr-6 pr-53 pr-63 ax-2 pr-67 ax-25 pr-62 ) ACPZOUHZ
       DEZAUTDEZUTFEZGHZIZUSJDEZAJDEZJFEZGHIUSUTCPZDEZAVIDEZVIFEZGHIZUSBDEZABDEZ
       BFEZGHIOBOJVAVFVCVHGOJUSUSUTJDOJAACOJAKZLOJMZNOJVBVGUTJFOJAAUTJDVQVRNVRNQ
       OVIVAVJVCVLGOVIUSUSUTVIDOVIAACOVIAKZLOVIMZNOVIVBVKUTVIFOVIAAUTVIDVSVTNVTN
@@ -214,10 +214,10 @@ $)
     $d v_2 t_1 $.
     $( Proposition 3.2.n from [Mendelson] p. 156.  (Contributed by Boris
        Shminke, 18-Oct-2026.) $)
-    pr-78 $p \vdash ( t_1 \times t_2 ) = ( t_2 \times t_1 ) $=
-      ( ax-75 ax-11 ax-49 ax-16 ax-13 ax-72 ax-34 ax-35 ax-39 ax-43 ax-74 pr-50
-      fl-6 ax-7 pr-3 ax-2 pr-53 ax-6 ax-73 pr-67 pr-76 pr-59 pr-69 pr-77 pr-68
-      ax-9 ax-25 pr-61 ) AOPZCDZUKACDZEFZGZAHCDZHACDZEFGAUKUAUHZCDZURACDZEFGZAB
+    pr-79 $p \vdash ( t_1 \times t_2 ) = ( t_2 \times t_1 ) $=
+      ( ax-75 ax-11 ax-49 ax-16 ax-13 ax-72 ax-34 ax-35 ax-39 ax-43 ax-74 pr-51
+      fl-6 ax-7 pr-3 ax-2 pr-54 ax-6 ax-73 pr-68 pr-77 pr-60 pr-70 pr-78 pr-69
+      ax-9 ax-25 pr-62 ) AOPZCDZUKACDZEFZGZAHCDZHACDZEFGAUKUAUHZCDZURACDZEFGZAB
       CDZBACDZEFGOBOHULUPUMUQEOHAAUKHCOHAIZOHJZKOHUKHAACVEVDKLOURULUSUMUTEOURAA
       UKURCOURAIZOURJZKOURUKURAACVGVFKLUPHUQAUBAUCUDUOULAMDZUTEFGZVAUOUTVHEFGZV
       IUOUMAMDZVHEFGZVJUOUMULEFGVLULUMNUMULAUEQUTVKEFGVLVJRUKAUFUTVKVHSTQUTVHNQ
@@ -228,9 +228,9 @@ $)
   ${
     $( Proposition 3.2.o from [Mendelson] p. 156.  (Contributed by Boris
        Shminke, 18-Oct-2026.) $)
-    pr-79 $p \vdash ( t_1 = t_2 \rightarrow ( t_3 \times t_1 ) = ( t_3 \times
+    pr-80 $p \vdash ( t_1 = t_2 \rightarrow ( t_3 \times t_1 ) = ( t_3 \times
     t_2 ) ) $=
-      ( ax-49 ax-16 ax-13 ax-75 ax-11 pr-75 ax-2 pr-78 pr-53 ax-6 pr-19 pr-60
+      ( ax-49 ax-16 ax-13 ax-75 ax-11 pr-76 ax-2 pr-79 pr-54 ax-6 pr-20 pr-61
       pr-3 ) ABDEFACGHZBCGHZDEFZCAGHZCBGHZDEFABCISTRUATQDEFSTRDEFJCAKTQRLMUARDE
       FSCBKNOP $.
   $}
@@ -239,11 +239,11 @@ $)
     $d v_1 t_2 $.  $d v_1 t_3 $.
     $( Proposition 3.4.a from [Mendelson] p. 159 (Contributed by Boris Shminke,
        18-Oct-2026.) $)
-    pr-80 $p \vdash ( t_1 \times ( t_2 + t_3 ) ) = ( ( t_1 \times t_2 ) + ( t_1
+    pr-81 $p \vdash ( t_1 \times ( t_2 + t_3 ) ) = ( ( t_1 \times t_2 ) + ( t_1
     \times t_3 ) ) $=
-      ( ax-74 ax-11 ax-75 ax-49 ax-16 ax-13 ax-72 ax-35 ax-34 ax-39 ax-43 pr-76
-      fl-5 pr-73 ax-6 pr-54 pr-74 ax-7 ax-73 ax-9 pr-65 pr-59 pr-77 pr-19 pr-69
-      pr-53 pr-51 pr-72 pr-6 pr-3 pr-60 pr-55 ax-25 pr-61 ) PUAZBCDEZFEZURBFEZU
+      ( ax-74 ax-11 ax-75 ax-49 ax-16 ax-13 ax-72 ax-35 ax-34 ax-39 ax-43 pr-77
+      fl-5 pr-74 ax-6 pr-55 pr-75 ax-7 ax-73 ax-9 pr-66 pr-60 pr-78 pr-20 pr-70
+      pr-54 pr-52 pr-73 pr-6 pr-3 pr-61 pr-56 ax-25 pr-62 ) PUAZBCDEZFEZURBFEZU
       RCFEZDEZGHZIZJUSFEZJBFEZJCFEZDEZGHIURUBUCZUSFEZVJBFEZVJCFEZDEZGHIAUSFEZAB
       FEZACFEZDEZGHIPAPJUTVFVCVIGPJURJUSUSFPJKZPJBBCCDPJBLZPJCLZMMPJVAVGVBVHDPJ
       URJBBFVSVTMPJURJCCFVSWAMMNPVJUTVKVCVNGPVJURVJUSUSFPVJKZPVJBBCCDPVJBLZPVJC
@@ -259,9 +259,9 @@ $)
 
   $( Proposition 3.4.b from [Mendelson] p. 159 (Contributed by Boris Shminke,
      18-Oct-2026.) $)
-  pr-81 $p \vdash ( ( t_1 + t_2 ) \times t_3 ) = ( ( t_1 \times t_3 ) + ( t_2
+  pr-82 $p \vdash ( ( t_1 + t_2 ) \times t_3 ) = ( ( t_1 \times t_3 ) + ( t_2
     \times t_3 ) ) $=
-    ( ax-74 ax-11 ax-75 pr-78 pr-80 ax-49 ax-16 ax-13 pr-73 ax-6 pr-54 pr-69 )
+    ( ax-74 ax-11 ax-75 pr-79 pr-81 ax-49 ax-16 ax-13 pr-74 ax-6 pr-55 pr-70 )
     ABDEZCFECPFEZACFEZBCFEZDEZPCGQCAFEZSDEZTQUACBFEZDEZUBCABHUCSIJKUDUBIJKCBGUC
     SUALMNUARIJKUBTIJKCAGUARSOMNN $.
 
@@ -269,11 +269,11 @@ $)
     $d v_1 t_2 $.  $d v_1 t_3 $.
     $( Proposition 3.4.c from [Mendelson] p. 159 (Contributed by Boris Shminke,
        19-Oct-2026.) $)
-    pr-82 $p \vdash ( ( t_1 \times t_2 ) \times t_3 ) = ( t_1 \times ( t_2
+    pr-83 $p \vdash ( ( t_1 \times t_2 ) \times t_3 ) = ( t_1 \times ( t_2
     \times t_3 ) ) $=
-      ( ax-75 ax-11 ax-49 ax-16 ax-13 ax-72 ax-35 ax-34 ax-39 ax-43 pr-76 pr-75
-      fl-5 ax-6 ax-74 pr-77 pr-19 ax-7 ax-73 ax-9 pr-54 pr-59 pr-81 pr-69 pr-55
-      pr-60 ax-25 pr-61 ) PUAZBDEZCDEZULBCDEZDEZFGZHZIBDEZCDEZIUODEZFGHULUBUCZB
+      ( ax-75 ax-11 ax-49 ax-16 ax-13 ax-72 ax-35 ax-34 ax-39 ax-43 pr-77 pr-76
+      fl-5 ax-6 ax-74 pr-78 pr-20 ax-7 ax-73 ax-9 pr-55 pr-60 pr-82 pr-70 pr-56
+      pr-61 ax-25 pr-62 ) PUAZBDEZCDEZULBCDEZDEZFGZHZIBDEZCDEZIUODEZFGHULUBUCZB
       DEZCDEZVBUODEZFGHABDEZCDEZAUODEZFGHPAPIUNUTUPVAFPIUMUSCCDPIULIBBDPIJZPIBK
       ZLPICKZLPIULIUOUODVIPIBBCCDVJVKLLMPVBUNVDUPVEFPVBUMVCCCDPVBULVBBBDPVBJZPV
       BBKZLPVBCKZLPVBULVBUOUODVLPVBBBCCDVMVNLLMUTIVAUTICDEZIUSIFGHUTVOFGHBNUSIC
@@ -281,3 +281,21 @@ $)
       VRUNUOREZVPVRVTFGHURUMBCUFTUNUPUOUGUHUHVEVPFGHURULUOSTUIPAUQUJPAUNVGUPVHF
       PAUMVFCCDPAULABBDPAJZPABKZLPACKZLPAULAUOUODWAPABBCCDWBWCLLMUK $.
   $}
+
+  ${
+    $d v_1 t_2 $.  $d v_1 t_3 $.
+    $( Proposition 3.4.d from [Mendelson] p. 159 (Contributed by Boris Shminke,
+       23-Oct-2026.) $)
+    pr-84 $p \vdash ( ( t_2 + t_1 ) = ( t_3 + t_1 ) \rightarrow t_2 = t_3 ) $=
+      ( ax-74 ax-11 ax-49 ax-16 ax-13 ax-72 ax-73 ax-34 ax-35 ax-39 ax-43 ax-31
+      fl-5 ax-2 ax-9 pr-66 pr-52 ax-7 pr-20 pr-54 pr-56 pr-67 pr-65 pr-19 ax-25
+      pr-6 pr-3 ax-6 ax-27 pr-62 ) BPUAZDEZCUNDEZFGZHZBCFGZHZQZBIDEZCIDEZFGHZUT
+      QBUNJRZDEZCVEDEZFGHZUTQZBADEZCADEZFGHZUTQPAURUTVDUTPIPIUOVBUPVCFPIBBUNIDP
+      IBKZPILZMPICCUNIDPICKZVNMNPIBBCCFVMVONOURUTVHUTPVEPVEUOVFUPVGFPVEBBUNVEDP
+      VEBKZPVELZMPVECCUNVEDPVECKZVQMNPVEBBCCFVPVRNOVDBVBCBVBFGHVDVBBBSTUBVDVCCF
+      GHVBCFGHVBVCCUCCSUIUDVHURQVAVIQVHUOJRZUPJRZFGHURVHVSVFVTVSVFFGHVHVFVSBUNU
+      ETUBVHVGVTFGHVFVTFGHVFVGVTUCCUNUEUIUDUOUPUFUJVHURUTUGUKURUTPAPAUQUHPAUSUH
+      ULURUTVLUTPAPAUOVJUPVKFPABBUNADPABKZPALZMPACCUNADPACKZWBMNPABBCCFWAWCNOUM
+      $.
+  $}
+

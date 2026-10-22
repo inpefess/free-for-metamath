@@ -125,11 +125,17 @@ $)
   \rightarrow \alpha ) \rightarrow ( \gamma \rightarrow \beta ) ) ) $=
     ( ax-2 ax-3 ax-4 pr-3 ) ABDZCHDCADCBDDHCECABFG $.
 
+  $( Exercise 1.54.l from [Mendelson] p. 40.  (Contributed by Boris Shminke,
+     23-Oct-2026.) $)
+  pr-19 $p \vdash ( ( \alpha \rightarrow \beta ) \rightarrow ( ( \beta
+  \rightarrow \gamma ) \rightarrow ( \alpha \rightarrow \gamma ) ) ) $=
+    ( ax-2 pr-18 pr-4 ) BCDABDACDBCAEF $.
+
   ${
     es-8 $e \vdash \alpha $.
     $( ~ ax-3 as inference rule.  (Contributed by Boris Shminke,
        18-Oct-2026.) $)
-    pr-19 $p \vdash ( \varphi \rightarrow \alpha ) $=
+    pr-20 $p \vdash ( \varphi \rightarrow \alpha ) $=
       ( ax-2 ax-3 ax-6 ) ABADCABEF $.
   $}
 
@@ -138,7 +144,7 @@ $)
     es-10 $e \vdash ( \varphi \rightarrow ( \alpha \rightarrow \beta ) ) $.
     $( ~ ax-6 in deduction form.  (Contributed by Boris Shminke,
        18-Oct-2026.) $)
-    pr-20 $p \vdash ( \varphi \rightarrow \beta ) $=
+    pr-21 $p \vdash ( \varphi \rightarrow \beta ) $=
       ( ax-2 ax-4 ax-6 ) CAFZCBFZDCABFFIJFECABGHH $.
   $}
 
@@ -149,15 +155,15 @@ $)
     \beta ) ) $.
     $( ~ ax-5 as inference rule.  (Contributed by Boris Shminke,
        18-Oct-2026.) $)
-    pr-21 $p \vdash ( \varphi \rightarrow \alpha ) $=
-      ( ax-1 ax-2 ax-5 pr-3 pr-20 ) AFZBGZACDCKBFGLAGEABHIJ $.
+    pr-22 $p \vdash ( \varphi \rightarrow \alpha ) $=
+      ( ax-1 ax-2 ax-5 pr-3 pr-21 ) AFZBGZACDCKBFGLAGEABHIJ $.
   $}
 
   ${
     es-13 $e \vdash ( \varphi \rightarrow \lnot \lnot \alpha ) $.
     $( Negation elimination in deduction form, Chapter 2 in [Mendelson] p. 74.
        (Contributed by Boris Shminke, 18-Oct-2026.) $)
-    pr-22 $p \vdash ( \varphi \rightarrow \alpha ) $=
+    pr-23 $p \vdash ( \varphi \rightarrow \alpha ) $=
       ( ax-1 pr-7 pr-3 ) BADDACAEF $.
   $}
 
@@ -165,7 +171,7 @@ $)
     es-14 $e \vdash ( \varphi \rightarrow \alpha ) $.
     $( Negation introduction in deduction form, Chapter 2 in [Mendelson] p. 74.
        (Contributed by Boris Shminke, 18-Oct-2026.) $)
-    pr-23 $p \vdash ( \varphi \rightarrow \lnot \lnot \alpha ) $=
+    pr-24 $p \vdash ( \varphi \rightarrow \lnot \lnot \alpha ) $=
       ( ax-1 pr-8 pr-3 ) BAADDCAEF $.
   $}
 
@@ -174,7 +180,7 @@ $)
     \lnot \beta ) ) $.
     $( Conjunction elimination in deduction form, Chapter 2 in [Mendelson]
        p. 74.  (Contributed by Boris Shminke, 18-Oct-2026.) $)
-    pr-24 $p \vdash ( \varphi \rightarrow \alpha ) $=
+    pr-25 $p \vdash ( \varphi \rightarrow \alpha ) $=
       ( ax-1 ax-2 pr-15 pr-3 ) CABEFEADABGH $.
   $}
 
@@ -183,7 +189,7 @@ $)
     \beta ) ) $.
     $( Conjunction elimination in deduction form, Chapter 2 in [Mendelson]
        p. 74.  (Contributed by Boris Shminke, 18-Oct-2026.) $)
-    pr-25 $p \vdash ( \varphi \rightarrow \beta ) $=
+    pr-26 $p \vdash ( \varphi \rightarrow \beta ) $=
       ( ax-1 ax-2 pr-16 pr-3 ) CABEFEBDABGH $.
   $}
 
@@ -192,9 +198,9 @@ $)
     es-18 $e \vdash ( \varphi \rightarrow \beta ) $.
     $( Conjunction introduction in deduction form, Chapter 2 in [Mendelson]
        p. 75.  (Contributed by Boris Shminke, 18-Oct-2026.) $)
-    pr-26 $p \vdash ( \varphi \rightarrow \lnot ( \alpha \rightarrow \lnot
+    pr-27 $p \vdash ( \varphi \rightarrow \lnot ( \alpha \rightarrow \lnot
     \beta ) ) $=
-      ( ax-1 ax-2 pr-17 pr-3 pr-20 ) BABFGFZCECABKGDABHIJ $.
+      ( ax-1 ax-2 pr-17 pr-3 pr-21 ) BABFGFZCECABKGDABHIJ $.
   $}
 
   ${
@@ -203,8 +209,8 @@ $)
     es-20 $e \vdash ( \varphi \rightarrow \lnot \beta ) $.
     $( Disjunction elimination in deduction form, Chapter 2 in [Mendelson]
        p. 75.  (Contributed by Boris Shminke, 18-Oct-2026.) $)
-    pr-27 $p \vdash ( \varphi \rightarrow \alpha ) $=
-      ( ax-1 ax-2 ax-3 pr-3 pr-21 ) ABCDCBFZAFZKGEKLHIJ $.
+    pr-28 $p \vdash ( \varphi \rightarrow \alpha ) $=
+      ( ax-1 ax-2 ax-3 pr-3 pr-22 ) ABCDCBFZAFZKGEKLHIJ $.
   $}
 
   ${
@@ -212,10 +218,10 @@ $)
     \beta ) ) $.
     $( Disjunction elimination in deduction form, Chapter 2 in [Mendelson]
        p. 75.  (Contributed by Boris Shminke, 18-Oct-2026.) $)
-    pr-28 $p  \vdash ( \varphi \rightarrow \lnot ( \lnot \alpha \rightarrow
+    pr-29 $p  \vdash ( \varphi \rightarrow \lnot ( \lnot \alpha \rightarrow
     \lnot \lnot \beta ) ) $=
-      ( ax-1 ax-2 pr-18 pr-4 pr-7 pr-6 pr-10 ax-6 pr-3 ) CAEZBFZEZNBEEZFZEZDROF
-      PSFRQBFZOTROQBNGHBIJROKLM $.
+      ( ax-1 ax-2 pr-19 pr-7 pr-6 pr-10 ax-6 pr-3 ) CAEZBFZEZMBEEZFZEZDQNFORFQP
+      BFNMPBGBHIQNJKL $.
   $}
 
   ${
@@ -225,8 +231,8 @@ $)
     ) $.
     $( Disjunction elimination in deduction form, Chapter 2 in [Mendelson]
        p. 75.  (Contributed by Boris Shminke, 18-Oct-2026.) $)
-    pr-29 $p  \vdash ( \varphi \rightarrow \gamma ) $=
-      ( ax-1 ax-2 pr-10 pr-3 pr-18 pr-20 pr-21 ) CAHZDDACICHZOIEACJKDOCIZPOHIOB
+    pr-30 $p  \vdash ( \varphi \rightarrow \gamma ) $=
+      ( ax-1 ax-2 pr-10 pr-3 pr-18 pr-21 pr-22 ) CAHZDDACICHZOIEACJKDOCIZPOHIOB
       IZQDGDBCIRQIFBCOLKMOCJKN $.
   $}
 
@@ -234,7 +240,7 @@ $)
     es-25 $e \vdash ( \varphi \rightarrow \alpha ) $.
     $( Disjunction introduction in deduction form, Chapter 2 in [Mendelson]
        p. 75.  (Contributed by Boris Shminke, 18-Oct-2026.) $)
-    pr-30 $p  \vdash ( \varphi \rightarrow ( \lnot \alpha \rightarrow \beta )
+    pr-31 $p  \vdash ( \varphi \rightarrow ( \lnot \alpha \rightarrow \beta )
     ) $=
       ( ax-1 ax-2 pr-13 pr-3 ) CAAEBFDABGH $.
   $}
@@ -243,7 +249,7 @@ $)
     es-26 $e \vdash ( \varphi \rightarrow \beta ) $.
     $( Disjunction introduction in deduction form, Chapter 2 in [Mendelson]
        p. 75.  (Contributed by Boris Shminke, 18-Oct-2026.) $)
-    pr-31 $p  \vdash ( \varphi \rightarrow ( \lnot \alpha \rightarrow \beta )
+    pr-32 $p  \vdash ( \varphi \rightarrow ( \lnot \alpha \rightarrow \beta )
     ) $=
       ( ax-1 ax-2 ax-3 pr-3 ) CBAEZBFDBIGH $.
   $}
@@ -252,7 +258,7 @@ $)
     es-27 $e \vdash ( \alpha \rightarrow \beta ) $.
     $( Conditional contrapositive, Chapter 2 in [Mendelson] p. 75.
        (Contributed by Boris Shminke, 18-Oct-2026.) $)
-    pr-32 $p  \vdash ( \lnot \beta \rightarrow \lnot \alpha ) $=
+    pr-33 $p  \vdash ( \lnot \beta \rightarrow \lnot \alpha ) $=
       ( ax-2 ax-1 pr-10 ax-6 ) ABDBEAEDCABFG $.
   $}
 
@@ -260,7 +266,7 @@ $)
     es-28 $e \vdash ( \varphi \rightarrow ( \alpha \rightarrow \beta ) ) $.
     $( Conditional contrapositive in deduction form, Chapter 2 in [Mendelson]
        p. 75.  (Contributed by Boris Shminke, 18-Oct-2026.) $)
-    pr-33 $p  \vdash ( \varphi \rightarrow ( \lnot \beta \rightarrow \lnot
+    pr-34 $p  \vdash ( \varphi \rightarrow ( \lnot \beta \rightarrow \lnot
     \alpha ) ) $=
       ( ax-2 ax-1 pr-10 pr-3 ) CABEBFAFEDABGH $.
   $}
@@ -269,7 +275,7 @@ $)
     es-29 $e \vdash ( \lnot \alpha \rightarrow \lnot \beta ) $.
     $( Conditional contrapositive, Chapter 2 in [Mendelson] p. 75.
        (Contributed by Boris Shminke, 18-Oct-2026.) $)
-    pr-34 $p  \vdash ( \beta \rightarrow \alpha ) $=
+    pr-35 $p  \vdash ( \beta \rightarrow \alpha ) $=
       ( ax-1 ax-2 pr-5 ax-6 ) ADBDEBAECBAFG $.
   $}
 
@@ -278,6 +284,6 @@ $)
     \beta ) ) $.
     $( Conditional contrapositive in deduction form, Chapter 2 in [Mendelson]
        p. 75.  (Contributed by Boris Shminke, 18-Oct-2026.) $)
-    pr-35 $p  \vdash ( \varphi \rightarrow ( \beta \rightarrow \alpha ) ) $=
+    pr-36 $p  \vdash ( \varphi \rightarrow ( \beta \rightarrow \alpha ) ) $=
       ( ax-1 ax-2 pr-5 pr-3 ) CAEBEFBAFDBAGH $.
   $}
