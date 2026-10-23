@@ -6,14 +6,19 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v6
-      - name: Verify by metamath-exe
-        uses: ./.github/actions/verify-by-metamath-exe
-        id: verify-by-metamath-exe
-        with:
-          main-file: 'main.mm'
       - name: Verify by metamath-knife
         uses: ./.github/actions/verify-by-metamath-knife
         id: verify-by-metamath-knife
+        with:
+          main-file: 'main.mm'
+      - name: Verify by mmverify.py
+        uses: ./.github/actions/verify-by-mmverify-py
+        id: verify-by-mmverify-py
+        with:
+          main-file: 'main.mm'
+      - name: Verify by metamath-exe
+        uses: ./.github/actions/verify-by-metamath-exe
+        id: verify-by-metamath-exe
         with:
           main-file: 'main.mm'
   build:
