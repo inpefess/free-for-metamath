@@ -5,7 +5,7 @@ $(
 
 Textbooks don't always make a distinction between theorems, meta-theorems, and
 theorem schemata. Similarly, as it is uncommon to prove that a string is _not_
-a wff in Metamath, we can not prove even something as simple as
+a wff in Metamath, we cannot prove even something as simple as
 ` substitutable v_1 , v_1 , \alpha `. If we replace ` \alpha ` by an actual
 wff, however, the proof becomes a mundane application of the recursive
 definition of ` substitutable `. In fact, _improve_ command from _metamath-exe_

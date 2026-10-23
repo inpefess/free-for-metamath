@@ -21,13 +21,13 @@ they study. Popular interactive theorem provers like
 [Isabelle](https://isabelle.in.tum.de/),
 [Roque](https://rocq-prover.org/) or [Lean](https://lean-lang.org/)
 where one can define complex concepts and formalise (in principle)
-all mathematics starting from foundations sound like a bit of an
-overkill for such a "simple" task. Another problem is that, in fact,
-these systems are just not designed for easily changing the
-underlying logic. One would probably prefer something:
+all mathematics starting from foundations may seem like overkill for
+such a "simple" task. Another problem is that, in fact, these systems
+are not designed to easily allow changes to the underlying logic. One
+would probably prefer something:
 
-* where one can write down Hilbert style axioms and deduction rules
-  like ones from logic textbooks
+* where one can specify Hilbert-style axioms and deduction rules
+  similar to those found in logic textbooks
 * that can check a simple proof for an exercise written down (and not
   necessarily find the proof automatically)
 * that is not attached to any particular foundations (so one can
@@ -50,20 +50,20 @@ and Montague](https://doi.org/10.1007/BF01969434),
 [Monk](https://doi.org/10.1007/BF01969435),
 [Cocchiarella](https://doi.org/10.1305/ndjfl%2F1093893584), and later
 by [Megill](https://doi.org/10.1305/ndjfl%2F1040149359). It was not
-clear to me however how one _would_ (if they had so chosen) express
-something like a Universal Instantiation schema including the notion
-of a term being free for a variable in a formula in Metamath. [The
-Metamath manual](https://us.metamath.org/#book) only says that "it is
-possible to use the Metamath language to implement these concepts"
-but doesn't give any details. It is true that `set.mm` defines proper
-substitution at some point, but _inside_ the theory. I haven't found
-any attempts to define substitutability or variable freedom in a way
-they are, as meta-theoretic notions (i.e. on the same level as `|-`
-and `wff`). So I decided to do it myself.
+clear to me however how one _would_ (had they chosen to do so)
+express something like a Universal Instantiation schema including the
+notion of a term being free for a variable in a formula in Metamath.
+[The Metamath manual](https://us.metamath.org/#book) only says that
+"it is possible to use the Metamath language to implement these
+concepts" but does not give any details. It is true that `set.mm`
+defines proper substitution at some point, but _inside_ the theory. I
+haven't found any attempts to define substitutability or variable
+freedom as meta-theoretic notions (i.e. on the
+same level as `|-` and `wff`). So I decided to do it myself.
 
-Not only did it happen to be possible in Metamath language, but it
-came so naturally that now I'm convinced Metamath was literally
-created for such things.
+Not only was this possible in Metamath language, but it came so
+naturally that now I am convinced Metamath was literally created for
+such things.
 
 # Verified
 
@@ -83,7 +83,7 @@ Dedication](https://creativecommons.org/publicdomain/zero/1.0/).
 public domain. Credits: N. Megill (1994) and G. Mascellani (2019).
 
 [XITS Math font](https://fontlibrary.org/en/font/xits-math) is
-licenced under [Open Font Licence](https://openfontlicense.org/).
+licensed under the [Open Font Licence](https://openfontlicense.org/).
 
 # Continuous Integration
 
@@ -101,13 +101,7 @@ and then run verifiers:
 ./verify.sh
 ```
 
-To build HTML representation of the code, first build the Docker
-image:
-
-```sh
-```
-
-and then run the build:
+To build HTML representation of the code:
 
 ```sh
 docker run --user "$(id -u):$(id -g)" --rm --name build-html-by-metamath-exe \

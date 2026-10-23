@@ -125,27 +125,27 @@ $)
   fl-28 $f three-place-predicate A_1^3 $.
   fl-29 $f four-place-predicate A_1^4 $.
 
-  $( One-place predicate symbol appied to a term is an atomic formula.  See
+  $( One-place predicate symbol applied to a term is an atomic formula.  See
      definition in Chapter 2 from [Enderton] p. 74 (Contributed by Boris
      Shminke, 18-Oct-2026.) $)
   ax-14 $a atomic-formula A_1^1 ( t_1 ) $.
 
-  $( Two-place predicate symbol appied to two terms is an atomic formula.  See
+  $( Two-place predicate symbol applied to two terms is an atomic formula.  See
      definition in Chapter 2 from [Enderton] p. 74 (Contributed by Boris
      Shminke, 18-Oct-2026.) $)
   ax-15 $a atomic-formula A_1^2 ( t_1 , t_2 ) $.
 
-  $( Two-place predicate symbol in infix notation appied to two terms is an
+  $( Two-place predicate symbol in infix notation applied to two terms is an
      atomic formula.  See definition in Chapter 2 from [Enderton] p. 74
      (Contributed by Boris Shminke, 18-Oct-2026.) $)
   ax-16 $a atomic-formula t_1 A_2^2 t_2 $.
 
-  $( Three-place predicate symbol appied to three terms is an atomic formula.
+  $( Three-place predicate symbol applied to three terms is an atomic formula.
      See definition in Chapter 2 from [Enderton] p. 74 (Contributed by Boris
      Shminke, 18-Oct-2026.) $)
   ax-17 $a atomic-formula A_1^3 ( t_1 , t_2 , t_3 ) $.
 
-  $( Four-place predicate symbol appied to four terms is an atomic formula.
+  $( Four-place predicate symbol applied to four terms is an atomic formula.
      See definition in Chapter 2 from [Enderton] p. 74 (Contributed by Boris
      Shminke, 18-Oct-2026.) $)
   ax-18 $a atomic-formula A_1^4 ( t_1 , t_2 , t_3 , t_4 ) $.
@@ -155,7 +155,7 @@ $(
   Well-formed formulas can contain quantifiers
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 
-` \forall v_1 \alpha ` means "for every value of a variable ` v_1 ` it's true
+` \forall v_1 \alpha ` means "for every value of a variable ` v_1 ` it is true
 that ` \alpha ` ".
 $)
   $c \forall $.
