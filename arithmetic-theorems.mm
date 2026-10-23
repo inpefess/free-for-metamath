@@ -299,3 +299,9 @@ $)
       $.
   $}
 
+
+  $( Proposition 3.5.a from [Mendelson] p. 160 (Contributed by Boris Shminke,
+     24-Oct-2026.) $)
+  pr-85 $p \vdash ( t_1 + 0 ' ) = t_1 ' $=
+    ( ax-72 ax-73 ax-9 ax-74 ax-11 pr-67 ax-49 ax-16 ax-13 pr-66 pr-63 pr-55
+    ax-6 ) ABCDEFABEFZCDZACDZABGOAHIJPQHIJAKOALNM $.
