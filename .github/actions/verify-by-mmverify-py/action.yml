@@ -1,0 +1,10 @@
+name: "Verify by mmverify.py"
+inputs:
+  main-file:
+    description: 'Name of the main Metamath file to verify'
+    required: true
+runs:
+  using: 'docker'
+  image: 'docker://ghcr.io/inpefess/verify-by-mmverify-py:latest'
+  args:
+    - ${{ inputs.main-file }}

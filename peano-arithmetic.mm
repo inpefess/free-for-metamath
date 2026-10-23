@@ -3,9 +3,9 @@ $(
   Peano arithmetic
 ###############################################################################
 
-The induction schema is another interesting application of the ` substitution `
-meta-predicate, which was defined primarily to formulate predicate calculus
-axioms.
+The induction schema provides another interesting application of the
+` substitution ` meta-predicate, which was defined primarily to formulate the
+axioms of predicate calculus.
 $)
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
