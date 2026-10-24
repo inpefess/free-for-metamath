@@ -11,6 +11,11 @@ jobs:
         id: verify-by-metamath-knife
         with:
           main-file: 'main.mm'
+      - name: Verify by mmcheck
+        uses: ./.github/actions/verify-by-checkmm
+        id: verify-by-checkmm
+        with:
+          main-file: 'main.mm'
       - name: Verify by mmverify.py
         uses: ./.github/actions/verify-by-mmverify-py
         id: verify-by-mmverify-py
