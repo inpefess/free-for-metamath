@@ -3,18 +3,19 @@ $(
      Predicate calculus theorems
 ###############################################################################
 
-Textbooks don't always make a distinction between theorems, meta-theorems, and
+Textbooks do not always distinguish between theorems, meta-theorems, and
 theorem schemata. Similarly, as it is uncommon to prove that a string is _not_
-a wff in Metamath, we cannot prove even something as simple as
+a wff in Metamath, we cannot prove even a statement as simple as
 ` substitutable v_1 , v_1 , \alpha `. If we replace ` \alpha ` by an actual
 wff, however, the proof becomes a mundane application of the recursive
-definition of ` substitutable `. In fact, _improve_ command from _metamath-exe_
-can find such proofs automatically (but they are sometimes wrong because
-_improve_ does not account for disjoint variables.)
+definition of ` substitutable `. In fact, the _improve_ command from
+_metamath-exe_ can find such proofs automatically, although they are
+occasionally incorrect because _improve_ does not account for disjoint
+variables.
 
 In this section, meta-level assumptions have been intentionally added to
-certain provable assertions to highlight that while textbooks frequently label
-these as "theorems", they are not always so, strictly speaking.
+certain provable assertions to highlight that although textbooks frequently
+label these as "theorems", they are not always so, strictly speaking.
 
 The existential quantifier is not defined; instead, it is replaced by
 ` \lnot \forall v_1 \lnot `.

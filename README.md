@@ -1,8 +1,8 @@
 # Metamath theories with "free for" concept
 
-This repository contains examples of formal proofs in [Metamath
+This repository contains examples of formal proofs in the [Metamath
 language](https://us.metamath.org/) that use the notion of a term
-_free for_ a variable in a first-order formula (as defined in
+being _free for_ a variable in a first-order formula (as defined in
 [Mendelson's textbook](https://doi.org/10.1201/b18519), or see [this
 entry](https://plato.stanford.edu/entries/quantification/#AxiForPurQuaLog)).
 It is sometimes also called _substitutability_ (e.g. by
@@ -16,15 +16,15 @@ You can browse generated HTML representations of the proofs
 
 Lifelong learners of logic might at some point want a computer system
 to verify some exercises they might be doing in yet another logic
-they study. Popular interactive theorem provers like
+they study. Popular interactive theorem provers such as
 [Mizar](https://mizar.uwb.edu.pl/),
 [Isabelle](https://isabelle.in.tum.de/),
-[Roque](https://rocq-prover.org/) or [Lean](https://lean-lang.org/)
+[Roque](https://rocq-prover.org/) or [Lean](https://lean-lang.org/) -
 where one can define complex concepts and formalise (in principle)
-all mathematics starting from foundations may seem like overkill for
-such a "simple" task. Another problem is that, in fact, these systems
-are not designed to easily allow changes to the underlying logic. One
-would probably prefer something:
+all mathematics starting from foundations - may seem like overkill
+for such a "simple" task. Furthermore, these systems are typically
+not designed to easily accommodate changes to the underlying logic.
+An ideal system would instead provide the following:
 
 * where one can specify Hilbert-style axioms and deduction rules
   similar to those found in logic textbooks
@@ -32,9 +32,9 @@ would probably prefer something:
   necessarily find the proof automatically)
 * that is not attached to any particular foundations (so one can
   write down Peano axioms instead of building integers from sets)
-* that is logic-agnostic and could express not only classical and
-  intuitionistic logics, but also first degree entailment, logic of
-  paradox or other so-called philosophical logics
+* that is logic-agnostic and capable of expressing not only classical
+  and intuitionistic logics, but also first degree entailment, logic
+  of paradox or other so-called philosophical logics
 
 Metamath sounds like a match. In fact, its creator, Norman D. Megill,
 used it for his study of [quantum
@@ -43,27 +43,27 @@ logic](https://us.metamath.org/qleuni/mmql.html).
 # Challenges addressed by this project
 
 Metamath's largest proofs collection,
-[set.mm](https://github.com/metamath/set.mm), conscientiously avoids
-complexities of proper substitution by applying ideas conceived by
+[set.mm](https://github.com/metamath/set.mm), avoids complexities of
+proper substitution by applying ideas conceived by
 [Tarski](https://doi.org/10.1007/BF01972461) and developed by [Kalish
 and Montague](https://doi.org/10.1007/BF01969434),
 [Monk](https://doi.org/10.1007/BF01969435),
-[Cocchiarella](https://doi.org/10.1305/ndjfl%2F1093893584), and later
-by [Megill](https://doi.org/10.1305/ndjfl%2F1040149359). It was not
-clear to me however how one _would_ (had they chosen to do so)
-express something like a Universal Instantiation schema including the
-notion of a term being free for a variable in a formula in Metamath.
-[The Metamath manual](https://us.metamath.org/#book) only says that
-"it is possible to use the Metamath language to implement these
-concepts" but does not give any details. It is true that `set.mm`
-defines proper substitution at some point, but _inside_ the theory. I
-haven't found any attempts to define substitutability or variable
-freedom as meta-theoretic notions (i.e. on the
-same level as `|-` and `wff`). So I decided to do it myself.
+[Cocchiarella](https://doi.org/10.1305/ndjfl%2F1093893584), and
+later, [Megill](https://doi.org/10.1305/ndjfl%2F1040149359). However,
+it was not clear how one _would_ (had they chosen to do so) express a
+Universal Instantiation schema - incorporating the notion of a term
+being free for a variable in a formula - within Metamath. [The
+Metamath manual](https://us.metamath.org/#book) states that "it is
+possible to use the Metamath language to implement these concepts",
+yet provides no further details. While `set.mm` does define proper
+substitution, it does so _inside_ the theory. I haven't found any
+attempts to define substitutability or variable freedom as
+meta-theoretic notions (i.e. on the same level as `|-` and `wff`). So
+I decided to do it myself.
 
-Not only was this possible in Metamath language, but it came so
-naturally that now I am convinced Metamath was literally created for
-such things.
+Not only was this possible in the Metamath language, but the process
+was so natural that I am now convinced Metamath was literally created
+for such applications.
 
 # Verified
 
@@ -88,8 +88,8 @@ licensed under the [Open Font Licence](https://openfontlicense.org/).
 # Continuous Integration
 
 Every change pushed to this repository is verified and built by
-private Docker-based actions found in `.github/actions` folder. To
-run the same pipeline locally, first build the necessary images:
+private Docker-based actions located in the `.github/actions` folder.
+To run the same pipeline locally, first build the necessary images:
 
 ```sh
 ./build-images.sh

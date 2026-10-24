@@ -5,17 +5,17 @@ $(
 $)
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
-  Variables and term
+  Variables and terms
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 
-In predicate calculus textbooks, variables are treated as meta-variables
-ranging over real variables of predicate calculus. It makes no difference
-whether some variable is called ` v_1 ` or ` v_2 `. Crucially, however,
-variables with different names are indeed different variables.
-Substitution (sometimes called proper substitution) is typically governed by
-syntax-dependent rules, so we will explicitly (with a $d statement) ask
-Metamath not to substitute meta-variables ranging over predicate calculus
-variables by each other in most cases.
+In predicate calculus textbooks, variables are typically treated as
+meta-variables ranging over the actual variables of the predicate calculus. It
+makes no difference whether some variable is called ` v_1 ` or ` v_2 `.
+Crucially, however, variables with different names are indeed different
+variables. Substitution (sometimes called proper substitution) is typically
+governed by syntax-dependent rules, we will therefore explicitly (via a $d
+statement) instruct Metamath not to substitute meta-variables ranging over
+predicate calculus variables for one another in most cases.
 
 ` variable v_1 ` means "` v_1 ` is a variable".
 
@@ -31,7 +31,7 @@ $)
 
   $c term $.
 
-  $( Variables are terms.  See definition in Chapter 2 from [Enderton] p. 74
+  $( Variables are terms.  See definition in Chapter 2 of [Enderton] p. 74
      (Contributed by Boris Shminke, 18-Oct-2026.) $)
   ax-7 $a term v_1 $.
 $(
@@ -39,17 +39,17 @@ $(
   Functions
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 
-We do not define constants as a grammatical category. A Metamath constant may
-be declared and an axiom that it is a term added to introduce a new constant
-(like zero or empty set) to the theory language.
+Constants are not defined as a separate grammatical category. A Metamath
+constant may be declared and an axiom that it is a term added to introduce a
+new constant (like zero or empty set) to the theory language.
 
 We define only unary functions in prefix and postfix notation, binary functions
-in prefix and infix notation, and ternary functions. If a theory contains
+in prefix and infix notation, and ternary functions. If a theory requires
 functions with additional arguments, this definition must be extended.
 
-While parentheses and commas are not strictly necessary for functions in prefix
-notation, they are used here for readability. We will do the same for
-predicates and meta-predicates in following sections.
+Although parentheses and commas are not strictly necessary for functions in
+prefix notation, they are used here for readability. The same convention is
+applied to predicates and meta-predicates in the following sections.
 $)
   $v t_1 t_2 t_3 t_4 t_5 t_6 t_7 t_8 t_9 $.
   fl-10 $f term t_1 $.
@@ -77,21 +77,21 @@ $)
   ax-8 $a term f_1^1 ( t_1 ) $.
 
   $( Unary functions in postfix notations applied to terms produce terms.  See
-     definition in Chapter 2 from [Enderton] p. 74 (Contributed by Boris
-     Shminke, 18-Oct-2026.) $)
+     definition in Chapter 2 of [Enderton] p. 74 (Contributed by Boris Shminke,
+     18-Oct-2026.) $)
   ax-9 $a term t_1 f_2^1 $.
 
   $( Binary functions applied to terms produce terms.  See definition in
-     Chapter 2 from [Enderton] p. 74 (Contributed by Boris Shminke,
+     Chapter 2 of [Enderton] p. 74 (Contributed by Boris Shminke,
      18-Oct-2026.) $)
   ax-10 $a term f_1^2 ( t_1 , t_2 ) $.
 
   $( Binary functions in infix notation applied to terms produce terms.  See
-     definition in Chapter 2 from [Enderton] p. 74 (Contributed by Boris
-     Shminke, 18-Oct-2026.) $)
+     definition in Chapter 2 of [Enderton] p. 74 (Contributed by Boris Shminke,
+     18-Oct-2026.) $)
   ax-11 $a term ( t_1 f_2^2 t_2 ) $.
   $( Ternary functions applied to terms produce terms.  See definition in
-     Chapter 2 from [Enderton] p. 74 (Contributed by Boris Shminke,
+     Chapter 2 of [Enderton] p. 74 (Contributed by Boris Shminke,
      18-Oct-2026.) $)
   ax-12 $a term f_1^3 ( t_1 , t_2 , t_3 ) $.
 $(
@@ -101,8 +101,7 @@ $(
 
 We define only one-, two-, three-, and four-place predicates. Two-place
 predicates can be written in infix notation (like equality or congruence). If
-there is a need for more predicates, it will be necessary to extend this
-definition.
+additional predicates are required, this definition must be extended.
 
 ` atomic-formula \alpha ` means "` \alpha ` is an atomic formula".
 $)
@@ -114,7 +113,7 @@ $)
   $v an-atomic-formula $.
   fl-24 $f atomic-formula an-atomic-formula $.
 
-  $( Atomic formulas are well-formed.  See definition in Chapter 2 from
+  $( Atomic formulas are well-formed.  See definition in Chapter 2 of
      [Enderton] p. 75 (Contributed by Boris Shminke, 18-Oct-2026.) $)
   ax-13 $a wff an-atomic-formula $.
 
@@ -126,27 +125,27 @@ $)
   fl-29 $f four-place-predicate A_1^4 $.
 
   $( One-place predicate symbol applied to a term is an atomic formula.  See
-     definition in Chapter 2 from [Enderton] p. 74 (Contributed by Boris
-     Shminke, 18-Oct-2026.) $)
+     definition in Chapter 2 of [Enderton] p. 74 (Contributed by Boris Shminke,
+     18-Oct-2026.) $)
   ax-14 $a atomic-formula A_1^1 ( t_1 ) $.
 
   $( Two-place predicate symbol applied to two terms is an atomic formula.  See
-     definition in Chapter 2 from [Enderton] p. 74 (Contributed by Boris
-     Shminke, 18-Oct-2026.) $)
+     definition in Chapter 2 of [Enderton] p. 74 (Contributed by Boris Shminke,
+     18-Oct-2026.) $)
   ax-15 $a atomic-formula A_1^2 ( t_1 , t_2 ) $.
 
   $( Two-place predicate symbol in infix notation applied to two terms is an
-     atomic formula.  See definition in Chapter 2 from [Enderton] p. 74
+     atomic formula.  See definition in Chapter 2 of [Enderton] p. 74
      (Contributed by Boris Shminke, 18-Oct-2026.) $)
   ax-16 $a atomic-formula t_1 A_2^2 t_2 $.
 
   $( Three-place predicate symbol applied to three terms is an atomic formula.
-     See definition in Chapter 2 from [Enderton] p. 74 (Contributed by Boris
+     See definition in Chapter 2 of [Enderton] p. 74 (Contributed by Boris
      Shminke, 18-Oct-2026.) $)
   ax-17 $a atomic-formula A_1^3 ( t_1 , t_2 , t_3 ) $.
 
   $( Four-place predicate symbol applied to four terms is an atomic formula.
-     See definition in Chapter 2 from [Enderton] p. 74 (Contributed by Boris
+     See definition in Chapter 2 of [Enderton] p. 74 (Contributed by Boris
      Shminke, 18-Oct-2026.) $)
   ax-18 $a atomic-formula A_1^4 ( t_1 , t_2 , t_3 , t_4 ) $.
 
@@ -161,7 +160,7 @@ $)
   $c \forall $.
 
   $( If ` \alpha ` is a wff and ` v_1 ` is a variable, then
-     ` \forall v_1 \alpha ` is also a wff.  See definition in Chapter 2 from
+     ` \forall v_1 \alpha ` is also a wff.  See definition in Chapter 2 of
      [Enderton] p. 75 (Contributed by Boris Shminke, 18-Oct-2026.) $)
   ax-19 $a wff \forall v_1 \alpha $.
 $(
@@ -169,15 +168,15 @@ $(
   Free variables
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 
-Enderton notes that free variables require a precise definition and gives a
+Enderton notes that free variables require a precise definition, providing a
 recursive one in Chapter 2 of [Enderton] p. 76.
 
-From Metamath's perspective, freedom of a variable is yet another
-meta-predicate, similar to one-place ` \vdash ` and ` wff ` but rather being
-two-place.
+From Metamath's perspective, the freedom of a variable can be treated as
+another meta-predicate - similar to one-place ` \vdash ` and ` wff ` but rather
+being two-place.
 
-We do not need "occurs free" per se but rather "does not occur free" which we
-get by negation of Enderton's definition.
+We do not require a predicate for "occurs free" per se, but rather for "does
+not occur free", which is obtained by negating Enderton's definition.
 
 ` not-free v_1 , \alpha ` means "` v_1 ` does not occur free in ` \alpha `".
 $)
@@ -296,11 +295,11 @@ $(
 
 Enderton "officially" recursively defines substitution in Chapter 2 of
 [Enderton] p. 112. Such a recursive definition may seem excessive for Metamath,
-as substitution is the fundamental - and only - operation. It is important to
-note, however, that, that Metamath's substitution is meta-theoretic: we
-substitute strings of symbols by other strings of symbols without any concern
-for their possible meaning. Substituting a variable "wherever it occurs free"
-assumes knowledge of the theory's syntax.
+given that substitution is the fundamental - and only - operation. It is
+important to note, however, that Metamath's substitution is meta-theoretic: we
+substitute strings of symbols with other strings of symbols, regardless of
+their meaning. Substituting a variable "wherever it occurs free" assumes
+knowledge of the theory's syntax.
 
 Enderton defines substitution as a recursive function, and in Metamath, we
 define rules for a (meta-theoretic) predicate.
@@ -355,10 +354,10 @@ $(
   Term replacement
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 
-To define substitution on atomic formulas we need to know how to replace
-variables in terms. To distinguish this operation from Metamath's built-in
-substitution, it is referred to here as "term replacement" and follow Exercise
-1 from [Enderton] p. 129.
+To define substitution on atomic formulas, it is first necessary to define how
+variables are replaced in terms. To distinguish this operation from the
+built-in substitution in Metamath, it is referred to here as "term replacement"
+and follows Exercise 1 from [Enderton] p. 129.
 
 ` term-replacement t_1 , v_1 , t_2 , t_3 ` means "replacement of ` v_1 ` by
 ` t_1 ` in ` t_2 ` gives ` t_3 `".
