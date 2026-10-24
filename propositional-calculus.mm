@@ -3,7 +3,7 @@ $(
   Propositional calculus
 ###############################################################################
 
-Grammar and notation follow Chapter 1 from [Enderton] p. 16.
+Grammar and notation follow Chapter 1 of [Enderton] p. 16.
 $)
 
 $(
@@ -42,7 +42,7 @@ $(
   Axioms of propositional calculus
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 
-The axioms and Modus Ponens are from Chapter 1 from [Mendelson] p. 28.
+The axioms and Modus Ponens are taken from Chapter 1 of [Mendelson] p. 28.
 
 ` \vdash \alpha ` means "` \alpha ` is a theorem"
 
