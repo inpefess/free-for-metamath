@@ -104,8 +104,22 @@ and then run verifiers:
 To build HTML representation of the code:
 
 ```sh
-docker run --user "$(id -u):$(id -g)" --rm --name build-html-by-metamath-exe \
-           --volume .:/proofs build-html-by-metamath-exe main.mm
+./build-html.sh
 ```
 
 You can now open `build/html/mmtheorems.html` in your browser.
+
+To build TeX representation of the code:
+
+```sh
+./build-tex.sh
+```
+
+Then you can build a PDF file:
+
+```sh
+cd ./build/tex/
+# run twice to get links right
+pdflatex main.tex
+pdflatex main.tex
+```

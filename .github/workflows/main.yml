@@ -11,7 +11,7 @@ jobs:
         id: verify-by-metamath-knife
         with:
           main-file: 'main.mm'
-      - name: Verify by mmcheck
+      - name: Verify by mm
         uses: ./.github/actions/verify-by-checkmm
         id: verify-by-checkmm
         with:
@@ -42,6 +42,11 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: ${{ github.workspace }}/build/html
+      - name: Build TeX by metamath-exe
+        uses: ./.github/actions/build-tex-by-metamath-exe
+        id: build-tex-by-metamath-exe
+        with:
+          main-file: 'main.mm'
   deploy:
     permissions:
       pages: write
