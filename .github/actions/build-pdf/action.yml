@@ -1,0 +1,10 @@
+name: "Build PDF by TeX Live"
+inputs:
+  main-file:
+    description: 'Name of the main TeX file'
+    required: true
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.main-file }}

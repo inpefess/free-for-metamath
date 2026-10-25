@@ -11,7 +11,7 @@ jobs:
         id: verify-by-metamath-knife
         with:
           main-file: 'main.mm'
-      - name: Verify by mmcheck
+      - name: Verify by mm
         uses: ./.github/actions/verify-by-checkmm
         id: verify-by-checkmm
         with:
@@ -38,6 +38,16 @@ jobs:
         id: build-html-by-metamath-exe
         with:
           main-file: 'main.mm'
+      - name: Build TeX by metamath-exe
+        uses: ./.github/actions/build-tex-by-metamath-exe
+        id: build-tex-by-metamath-exe
+        with:
+          main-file: 'main.mm'
+      - name: Build PDF with TeX Live
+        uses: ./.github/actions/build-pdf
+        id: build-pdf
+        with:
+          main-file: './build/tex/main.tex'
       - name: Upload HTML Build
         uses: actions/upload-pages-artifact@v3
         with:

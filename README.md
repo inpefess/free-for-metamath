@@ -11,6 +11,8 @@ substitution_ (e.g. by [Cocchiarella and
 Freund](https://doi.org/10.1093/acprof:oso/9780195366587.001.0001)).
 You can browse generated HTML representations of the proofs
 [here](https://inpefess.github.io/free-for-metamath/mmtheorems.html).
+PDF version is downloadable from
+[here](https://inpefess.github.io/free-for-metamath/main.pdf).
 
 # Why Metamath
 
@@ -104,8 +106,15 @@ and then run verifiers:
 To build HTML representation of the code:
 
 ```sh
-docker run --user "$(id -u):$(id -g)" --rm --name build-html-by-metamath-exe \
-           --volume .:/proofs build-html-by-metamath-exe main.mm
+./build-html.sh
 ```
 
 You can now open `build/html/mmtheorems.html` in your browser.
+
+To build PDF representation of the code (requires `pdflatex`):
+
+```sh
+./build-pdf.sh
+```
+
+You can now open `./build/pdf/main.pdf`.

@@ -9,3 +9,5 @@ docker build -t verify-by-checkmm \
              ./.github/actions/verify-by-checkmm
 docker build -t build-html-by-metamath-exe \
              ./.github/actions/build-html-by-metamath-exe
+docker build -t build-tex-by-metamath-exe \
+             ./.github/actions/build-tex-by-metamath-exe

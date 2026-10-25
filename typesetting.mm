@@ -149,7 +149,7 @@ htmldef "\times" as " &times; ";
   latexdef "\times" as "\times";
 htmldef "'" as "'";
   althtmldef "'" as "'";
-  latexdef "'" as "'";
+  latexdef "'" as "'\,";
 htmldef "A_1^1" as '<span class="subsup">&#x1D434;<span class="scripts">' +
     '<sub>1</sub><sup>1</sup></span></span>';
   althtmldef "A_1^1" as '<span class="subsup">&#x1D434;' +
