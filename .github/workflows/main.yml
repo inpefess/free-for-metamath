@@ -38,15 +38,20 @@ jobs:
         id: build-html-by-metamath-exe
         with:
           main-file: 'main.mm'
-      - name: Upload HTML Build
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: ${{ github.workspace }}/build/html
       - name: Build TeX by metamath-exe
         uses: ./.github/actions/build-tex-by-metamath-exe
         id: build-tex-by-metamath-exe
         with:
           main-file: 'main.mm'
+      - name: Build PDF with TeX Live
+        uses: ./.github/actions/build-pdf
+        id: build-pdf
+        with:
+          main-file: './build/tex/main.tex'
+      - name: Upload HTML Build
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ${{ github.workspace }}/build/html
   deploy:
     permissions:
       pages: write
