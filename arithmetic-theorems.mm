@@ -305,9 +305,15 @@ $)
     ( ax-72 ax-73 ax-9 ax-74 ax-11 pr-67 ax-49 ax-16 ax-13 pr-66 pr-63 pr-55
     ax-6 ) ABCDEFABEFZCDZACDZABGOAHIJPQHIJAKOALNM $.
 
-  $( Proposition 3.5.a from [Mendelson] p. 160 (Contributed by Boris Shminke,
+  $( Proposition 3.5.b from [Mendelson] p. 160 (Contributed by Boris Shminke,
      24-Oct-2026.) $)
   pr-86 $p \vdash ( t_1 \times 0 ' ) = t_1 $=
     ( ax-72 ax-73 ax-75 ax-11 ax-74 pr-69 ax-49 ax-16 ax-13 pr-68 pr-70 pr-73
     ax-9 ax-6 pr-66 pr-55 ) ABCNDEABDEZAFEZAABGSBAFEZARBHIJSTHIJAKRBALOTABFEABA
     MAPQQQ $.
+
+  $( Proposition 3.5.c from [Mendelson] p. 160 (Contributed by Boris Shminke,
+     25-Oct-2026.) $)
+  pr-87 $p \vdash ( t_1 \times 0 ' ' ) = ( t_1 + t_1 ) $=
+    ( ax-72 ax-73 ax-75 ax-11 ax-74 pr-69 ax-49 ax-16 ax-13 pr-86 pr-70 pr-55
+    ax-9 ax-6 ) ABCNZCNDEAPDEZAFEZAAFEZAPGQAHIJRSHIJAKQAALOM $.
