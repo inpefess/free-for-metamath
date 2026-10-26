@@ -1,6 +1,7 @@
 #!/bin/bash
 
 set -e
+cd classical
 docker run --user "$(id -u):$(id -g)" --rm --name verify-by-metamath-knife \
            --volume .:/proofs verify-by-metamath-knife main.mm
 docker run --user "$(id -u):$(id -g)" --rm --name verify-by-checkmm \
