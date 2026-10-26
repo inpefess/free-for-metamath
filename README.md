@@ -111,7 +111,7 @@ To build HTML representation of the code:
 
 You can now open `classical/build/html/mmtheorems.html` in your browser.
 
-To build PDF representation of the code (requires `pdflatex`):
+To build PDF representation of the code (requires `latexmk`):
 
 ```sh
 ./build-pdf.sh
