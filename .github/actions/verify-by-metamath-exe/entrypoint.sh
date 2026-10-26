@@ -1,6 +1,8 @@
 #!/bin/sh
 
-FILENAME=$1
+MODULE=$1
+FILENAME=$2
+cd $MODULE
 metamath "read ${FILENAME}" "write source ${FILENAME} /rewrap /no_versioning" \
    "erase" "read ${FILENAME}" "save proof * /compressed /fast" \
    "verify markup * /verbose" "verify proof *" \

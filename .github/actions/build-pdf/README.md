@@ -10,7 +10,7 @@ Build PDF using [TeX Live](https://tug.org/texlive/).
 
 ## Outputs
 
-PDF is written to `build/html`.
+PDF is written in the same folder as the TeX file.
 
 ## Example usage
 
@@ -18,5 +18,6 @@ PDF is written to `build/html`.
 uses: ./.github/actions/build-pdf
 id: build-pdf
 with:
-  main-file: 'build/tex/main.tex'
+  module-name: classical
+  main-file: build/tex/main.tex
 ```

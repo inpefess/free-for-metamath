@@ -5,13 +5,18 @@ Build TeX representation of Metamath files using
 
 ## Inputs
 
+### `module-name`
+
+**Required** Name of the module to verify.
+Possible values: classical or relevant.
+
 ### `main-file`
 
 **Required** Name of the main Metamath file.
 
 ## Outputs
 
-Uploadable artefacts are written to `build/tex`.
+Uploadable artefacts are written to `{module-name}/build/tex`.
 
 ## Example usage
 
@@ -19,5 +24,6 @@ Uploadable artefacts are written to `build/tex`.
 uses: ./.github/actions/build-tex-by-metamath-exe
 id: build-tex-by-metamath-exe
 with:
-  main-file: 'main.mm'
+  module-name: classical
+  main-file: main.mm
 ```

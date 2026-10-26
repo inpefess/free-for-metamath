@@ -1,3 +1,6 @@
 #!/bin/sh
 
-checkmm $1
+MODULE=$1
+FILENAME=$2
+cd $MODULE
+checkmm $FILENAME

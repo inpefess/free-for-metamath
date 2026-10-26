@@ -1,10 +1,15 @@
-name: "Build HTML by metamath-exe"
+name: Build HTML by metamath-exe
 inputs:
+  module-name:
+    description: |
+      Name of the module to verify. Possible values: classical or relevant.
+    required: true
   main-file:
-    description: 'Name of the main Metamath file'
+    description: Name of the main Metamath file
     required: true
 runs:
-  using: 'docker'
-  image: 'docker://ghcr.io/inpefess/build-html-by-metamath-exe:latest'
+  using: docker
+  image: docker://ghcr.io/inpefess/build-html-by-metamath-exe:latest
   args:
+    - ${{ inputs.module-name }}
     - ${{ inputs.main-file }}
