@@ -1,15 +1,10 @@
-name: "Build PDF by TeX Live"
+name: Build PDF by TeX Live
 inputs:
-  module-name:
-    description: |
-      Name of the module to verify. Possible values: classical or relevant.
-    required: true
   main-file:
-    description: 'Name of the main TeX file'
+    description: Name of the main TeX file
     required: true
 runs:
-  using: 'docker'
-  image: 'Dockerfile'
+  using: docker
+  image: Dockerfile
   args:
-    - ${{ inputs.module-name }}
     - ${{ inputs.main-file }}

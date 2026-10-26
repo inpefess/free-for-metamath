@@ -24,6 +24,6 @@ There are no outputs.
 uses: ./.github/actions/verify-by-mmverify-py
 id: verify-by-mmverify-py
 with:
-  module-name: "classical"
-  main-file: "main.mm"
+  module-name: classical
+  main-file: main.mm
 ```

@@ -24,6 +24,6 @@ There are no outputs.
 uses: ./.github/actions/verify-by-checkmm
 id: verify-by-checkmm
 with:
-  module-name: "classical"
-  main-file: "main.mm"
+  module-name: classical
+  main-file: main.mm
 ```

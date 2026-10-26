@@ -24,6 +24,6 @@ Uploadable artefacts are written to `{module-name}/build/html`.
 uses: ./.github/actions/build-html-by-metamath-exe
 id: build-html-by-metamath-exe
 with:
-  module-name: "classical"
-  main-file: "main.mm"
+  module-name: classical
+  main-file: main.mm
 ```

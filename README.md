@@ -117,4 +117,4 @@ To build PDF representation of the code (requires `pdflatex`):
 ./build-pdf.sh
 ```
 
-You can now open `classical/build/pdf/main.pdf`.
+You can now open `classical/build/tex/main.pdf`.

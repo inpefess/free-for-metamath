@@ -1,9 +1,7 @@
 #!/bin/sh
 
 set -e
-MODULE=$1
-TEX_FILE=$2
-cd $MODULE
+TEX_FILE=$1
 mkdir -p ./build/pdf
 cp $TEX_FILE ./build/pdf
 cd ./build/pdf

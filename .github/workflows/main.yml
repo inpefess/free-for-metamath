@@ -1,6 +1,9 @@
 on: [push]
 jobs:
   verify:
+    strategy:
+      matrix:
+        version: [classical, relevant]
     runs-on: ubuntu-latest
     name: Verify Metamath proof
     steps:
@@ -10,30 +13,33 @@ jobs:
         uses: ./.github/actions/verify-by-metamath-knife
         id: verify-by-metamath-knife
         with:
-          module-name: "classical"
-          main-file: "main.mm"
+          module-name: ${{ matrix.version }}
+          main-file: main.mm
       - name: Verify by mm
         uses: ./.github/actions/verify-by-checkmm
         id: verify-by-checkmm
         with:
-          module-name: "classical"
-          main-file: "main.mm"
+          module-name: ${{ matrix.version }}
+          main-file: main.mm
       - name: Verify by mmverify.py
         uses: ./.github/actions/verify-by-mmverify-py
         id: verify-by-mmverify-py
         with:
-          module-name: "classical"
-          main-file: "main.mm"
+          module-name: ${{ matrix.version }}
+          main-file: main.mm
       - name: Verify by metamath-exe
         uses: ./.github/actions/verify-by-metamath-exe
         id: verify-by-metamath-exe
         with:
-          module-name: "classical"
-          main-file: "main.mm"
+          module-name: ${{ matrix.version }}
+          main-file: main.mm
   build:
     runs-on: ubuntu-latest
     name: Build Metamath proof documentation
     needs: verify
+    strategy:
+      matrix:
+        version: [classical, relevant]
     steps:
       - name: Checkout
         uses: actions/checkout@v6
@@ -41,23 +47,23 @@ jobs:
         uses: ./.github/actions/build-html-by-metamath-exe
         id: build-html-by-metamath-exe
         with:
-          module-name: "classical"
-          main-file: "main.mm"
+          module-name: ${{ matrix.version }}
+          main-file: main.mm
       - name: Build TeX by metamath-exe
         uses: ./.github/actions/build-tex-by-metamath-exe
         id: build-tex-by-metamath-exe
         with:
-          module-name: "classical"
-          main-file: "main.mm"
+          module-name: ${{ matrix.version }}
+          main-file: main.mm
       - name: Build PDF with TeX Live
         uses: ./.github/actions/build-pdf
         id: build-pdf
         with:
-          main-file: "classical/build/tex/main.tex"
+          main-file: ${{ matrix.version }}/build/tex/main.tex
       - name: Upload HTML Build
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ${{ github.workspace }}/classical/build/html
+          path: ${{ github.workspace }}/${{ matrix.version }}/build/html
   deploy:
     permissions:
       pages: write

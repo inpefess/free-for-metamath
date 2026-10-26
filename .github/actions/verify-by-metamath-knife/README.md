@@ -24,6 +24,6 @@ There are no outputs.
 uses: ./.github/actions/verify-by-metamath-knife
 id: verify-by-metamath-knife
 with:
-  module-name: "classical"
-  main-file: "main.mm"
+  module-name: classical
+  main-file: main.mm
 ```

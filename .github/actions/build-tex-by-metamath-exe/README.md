@@ -24,6 +24,6 @@ Uploadable artefacts are written to `{module-name}/build/tex`.
 uses: ./.github/actions/build-tex-by-metamath-exe
 id: build-tex-by-metamath-exe
 with:
-  module-name: "classical"
-  main-file: "main.mm"
+  module-name: classical
+  main-file: main.mm
 ```
