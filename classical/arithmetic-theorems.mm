@@ -317,3 +317,24 @@ $)
   pr-87 $p \vdash ( t_1 \times 0 ' ' ) = ( t_1 + t_1 ) $=
     ( ax-72 ax-73 ax-75 ax-11 ax-74 pr-69 ax-49 ax-16 ax-13 pr-86 pr-70 pr-55
     ax-9 ax-6 ) ABCNZCNDEAPDEZAFEZAAFEZAPGQAHIJRSHIJAKQAALOM $.
+
+  ${
+    $d v_2 t_1 $.  $d v_1 t_1 $.  $d v_1 v_2 $.
+    $( Lemma for ~ pr-89 (Contributed by Boris Shminke, 26-Oct-2026.) $)
+    pr-88 $p \vdash ( ( t_1 + t_2 ) = 0 \rightarrow t_1 = 0 ) $=
+      ( ax-74 ax-11 ax-72 ax-49 ax-16 ax-13 ax-73 ax-34 ax-35 ax-39 ax-43 ax-31
+      fl-6 ax-2 ax-9 pr-52 pr-54 ax-6 pr-66 pr-67 pr-51 pr-64 pr-20 pr-35 pr-19
+      ax-7 ax-1 pr-3 ax-25 ax-27 pr-62 ) AOUHZCDZEFGZHZAEFGZHZPZAECDZEFGHZUSPZA
+      UNIQZCDZEFGHZUSPZABCDZEFGHZUSPOBUQUSVBUSOEOEUOVAEEFOEAAUNECOEAJZOEKLOEEJZ
+      MOEAAEEFVJVKMNUQUSVFUSOVDOVDUOVEEEFOVDAAUNVDCOVDAJZOVDKLOVDEJZMOVDAAEEFVL
+      VMMNAVAFGHVCVAAAUARAVAESTVFUQPUTVGPVFUOIQZEFGHZUQVNVEFGHVFVOPVEVNAUNUBRVN
+      VEESTVOEVNFGHZUQVNEUCUQVPVPUIUQUIUOUDUEUFUJUJVFUQUSUGTUQUSOBOBUPUKOBURUKU
+      LUQUSVIUSOBOBUOVHEEFOBAAUNBCOBAJZOBKLOBEJZMOBAAEEFVQVRMNUM $.
+  $}
+
+  $( Proposition 3.5.d from [Mendelson] p. 160 (Contributed by Boris Shminke,
+     26-Oct-2026.) $)
+  pr-89 $p \vdash ( ( t_1 + t_2 ) = 0 \rightarrow \lnot ( t_1 = 0 \rightarrow
+  \lnot t_2 = 0 ) ) $=
+    ( ax-72 ax-49 ax-16 ax-13 ax-74 ax-11 pr-88 ax-2 pr-73 pr-54 ax-6 pr-27
+    pr-3 ) ACDEFBCDEFZABGHZCDEFZABIRBAGHZCDEFZPSQDEFRTJBAKSQCLMBAION $.
