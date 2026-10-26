@@ -4,13 +4,18 @@ Build PDF using [TeX Live](https://tug.org/texlive/).
 
 ## Inputs
 
+### `module-name`
+
+**Required** Name of the module to verify.
+Possible values: classical or relevant.
+
 ### `main-file`
 
 **Required** Name of the main TeX file.
 
 ## Outputs
 
-PDF is written to `build/html`.
+PDF is written to `{module-name}/build/html`.
 
 ## Example usage
 
@@ -18,5 +23,6 @@ PDF is written to `build/html`.
 uses: ./.github/actions/build-pdf
 id: build-pdf
 with:
-  main-file: 'build/tex/main.tex'
+  module-name: "classical"
+  main-file: "./build/tex/main.tex"
 ```

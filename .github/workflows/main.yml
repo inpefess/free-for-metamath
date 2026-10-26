@@ -10,22 +10,26 @@ jobs:
         uses: ./.github/actions/verify-by-metamath-knife
         id: verify-by-metamath-knife
         with:
-          main-file: 'main.mm'
+          module-name: "classical"
+          main-file: "main.mm"
       - name: Verify by mm
         uses: ./.github/actions/verify-by-checkmm
         id: verify-by-checkmm
         with:
-          main-file: 'main.mm'
+          module-name: "classical"
+          main-file: "main.mm"
       - name: Verify by mmverify.py
         uses: ./.github/actions/verify-by-mmverify-py
         id: verify-by-mmverify-py
         with:
-          main-file: 'main.mm'
+          module-name: "classical"
+          main-file: "main.mm"
       - name: Verify by metamath-exe
         uses: ./.github/actions/verify-by-metamath-exe
         id: verify-by-metamath-exe
         with:
-          main-file: 'main.mm'
+          module-name: "classical"
+          main-file: "main.mm"
   build:
     runs-on: ubuntu-latest
     name: Build Metamath proof documentation
@@ -37,21 +41,23 @@ jobs:
         uses: ./.github/actions/build-html-by-metamath-exe
         id: build-html-by-metamath-exe
         with:
-          main-file: 'main.mm'
+          module-name: "classical"
+          main-file: "main.mm"
       - name: Build TeX by metamath-exe
         uses: ./.github/actions/build-tex-by-metamath-exe
         id: build-tex-by-metamath-exe
         with:
-          main-file: 'main.mm'
+          module-name: "classical"
+          main-file: "main.mm"
       - name: Build PDF with TeX Live
         uses: ./.github/actions/build-pdf
         id: build-pdf
         with:
-          main-file: './build/tex/main.tex'
+          main-file: "classical/build/tex/main.tex"
       - name: Upload HTML Build
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ${{ github.workspace }}/build/html
+          path: ${{ github.workspace }}/classical/build/html
   deploy:
     permissions:
       pages: write

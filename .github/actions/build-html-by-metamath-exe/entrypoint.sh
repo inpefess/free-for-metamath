@@ -1,6 +1,8 @@
 #!/bin/sh
 
-FILENAME=$1
+MODULE=$1
+FILENAME=$2
+cd $MODULE
 cp assets/*.html .
 metamath "read ${FILENAME}" "show statement * /alt_html" "write theorem_list" \
          "write bibliography mmbiblio.html" "quit" > build.log 2>&1

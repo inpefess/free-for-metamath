@@ -5,6 +5,11 @@ Verify Metamath proofs using
 
 ## Inputs
 
+### `module-name`
+
+**Required** Name of the module to verify.
+Possible values: classical or relevant.
+
 ### `main-file`
 
 **Required** Name of the main Metamath file to verify.
@@ -19,5 +24,6 @@ There are no outputs.
 uses: ./.github/actions/verify-by-metamath-exe
 id: verify-by-metamath-exe
 with:
-  main-file: 'main.mm'
+  module-name: "classical"
+  main-file: "main.mm"
 ```
