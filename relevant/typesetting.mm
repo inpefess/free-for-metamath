@@ -24,8 +24,7 @@ htmldef "(" as "(";
 htmldef ")" as ")";
   althtmldef ")" as ")";
   latexdef ")" as ")";
-htmldef "\rightarrow" as
-    " &rarr; ";
+htmldef "\rightarrow" as " &rarr; ";
   althtmldef "\rightarrow" as " &rarr; ";
   latexdef "\rightarrow" as " \rightarrow ";
 htmldef "\lnot" as " &not; ";
@@ -46,4 +45,10 @@ htmldef "\gamma" as '<span style="color: blue;">&gamma;</span>';
 htmldef "\varphi" as '<span style="color: blue;">&#x1D711;</span>';
   althtmldef "\varphi" as '<span style="color: blue;">&#x1D711;</span>';
   latexdef "\varphi" as "\varphi";
+htmldef "\wedge" as " &wedge; ";
+  althtmldef "\wedge" as " &wedge; ";
+  latexdef "\wedge" as "\wedge";
+htmldef "\vee" as " &vee; ";
+  althtmldef "\vee" as " &vee; ";
+  latexdef "\vee" as "\vee";
 $)
