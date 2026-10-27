@@ -51,4 +51,7 @@ htmldef "\wedge" as " &wedge; ";
 htmldef "\vee" as " &vee; ";
   althtmldef "\vee" as " &vee; ";
   latexdef "\vee" as "\vee";
+htmldef "\vdash" as '<span style="color: gray;">&#8866;</span> ';
+  althtmldef "\vdash" as '<span style="color: gray;">&#8866;</span> ';
+  latexdef "\vdash" as "\vdash";
 $)
