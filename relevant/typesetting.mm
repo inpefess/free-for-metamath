@@ -15,7 +15,7 @@ htmlcss '<STYLE TYPE="text/css">\n' +
   '</STYLE>';
 htmlbibliography "bibliography.html";
 htmlfont 'CLASS=math';
-htmltitle "Classical logic with 'free for' concept";
+htmltitle "Relevant logic";
 htmlhome '<a HREF="mmtheorems.html"><IMG SRC="mmlogo.svg" width=64 ' +
   'height=64 title="Home"/></a>';
 htmldef "(" as "(";
@@ -24,8 +24,7 @@ htmldef "(" as "(";
 htmldef ")" as ")";
   althtmldef ")" as ")";
   latexdef ")" as ")";
-htmldef "\rightarrow" as
-    " &rarr; ";
+htmldef "\rightarrow" as " &rarr; ";
   althtmldef "\rightarrow" as " &rarr; ";
   latexdef "\rightarrow" as " \rightarrow ";
 htmldef "\lnot" as " &not; ";
@@ -34,9 +33,6 @@ htmldef "\lnot" as " &not; ";
 htmldef "wff" as ' <span style="color: gray;">wff</span> ';
   althtmldef "wff" as ' <span style="color: gray;">wff</span> ';
   latexdef "wff" as "\mathrm{wff\ }";
-htmldef "\vdash" as '<span style="color: gray;">&#8866;</span> ';
-  althtmldef "\vdash" as '<span style="color: gray;">&#8866;</span> ';
-  latexdef "\vdash" as "\vdash";
 htmldef "\alpha" as ' <span style="color: blue;">&alpha;</span> ';
   althtmldef "\alpha" as ' <span style="color: blue;">&alpha;</span> ';
   latexdef "\alpha" as "\alpha";
@@ -49,4 +45,10 @@ htmldef "\gamma" as '<span style="color: blue;">&gamma;</span>';
 htmldef "\varphi" as '<span style="color: blue;">&#x1D711;</span>';
   althtmldef "\varphi" as '<span style="color: blue;">&#x1D711;</span>';
   latexdef "\varphi" as "\varphi";
+htmldef "\wedge" as " &wedge; ";
+  althtmldef "\wedge" as " &wedge; ";
+  latexdef "\wedge" as "\wedge";
+htmldef "\vee" as " &vee; ";
+  althtmldef "\vee" as " &vee; ";
+  latexdef "\vee" as "\vee";
 $)
