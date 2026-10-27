@@ -1,5 +1,6 @@
 $[ typesetting.mm $]
-$[ propositional-calculus.mm $]
+$[ propositional-calculus-syntax.mm $]
+$[ propositional-calculus-axioms.mm $]
 $[ propositional-theorems.mm $]
 $[ predicate-calculus-syntax.mm $]
 $[ predicate-calculus-axioms.mm $]
@@ -8,4 +9,3 @@ $[ equality-axioms.mm $]
 $[ equality-theorems.mm $]
 $[ peano-arithmetic.mm $]
 $[ arithmetic-theorems.mm $]
-

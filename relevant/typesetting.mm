@@ -15,7 +15,7 @@ htmlcss '<STYLE TYPE="text/css">\n' +
   '</STYLE>';
 htmlbibliography "bibliography.html";
 htmlfont 'CLASS=math';
-htmltitle "Classical logic with 'free for' concept";
+htmltitle "Relevant logic";
 htmlhome '<a HREF="mmtheorems.html"><IMG SRC="mmlogo.svg" width=64 ' +
   'height=64 title="Home"/></a>';
 htmldef "(" as "(";
@@ -34,9 +34,6 @@ htmldef "\lnot" as " &not; ";
 htmldef "wff" as ' <span style="color: gray;">wff</span> ';
   althtmldef "wff" as ' <span style="color: gray;">wff</span> ';
   latexdef "wff" as "\mathrm{wff\ }";
-htmldef "\vdash" as '<span style="color: gray;">&#8866;</span> ';
-  althtmldef "\vdash" as '<span style="color: gray;">&#8866;</span> ';
-  latexdef "\vdash" as "\vdash";
 htmldef "\alpha" as ' <span style="color: blue;">&alpha;</span> ';
   althtmldef "\alpha" as ' <span style="color: blue;">&alpha;</span> ';
   latexdef "\alpha" as "\alpha";
