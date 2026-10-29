@@ -9,10 +9,22 @@ It is sometimes also called _substitutability_ (e.g. by
 [Enderton](https://doi.org/10.1016/C2009-0-22107-6)) or _proper
 substitution_ (e.g. by [Cocchiarella and
 Freund](https://doi.org/10.1093/acprof:oso/9780195366587.001.0001)).
-You can browse generated HTML representations of the proofs
-[here](https://inpefess.github.io/free-for-metamath/mmtheorems.html).
-PDF version is downloadable from
-[here](https://inpefess.github.io/free-for-metamath/main.pdf).
+
+This repository includes around 100 proofs from classical
+propositional calculus, classical predicate calculus, and Peano
+arithmetic. Apart from that, there are also several proofs in [System
+R](https://plato.stanford.edu/entries/logic-relevance/logicr.html) of
+relevant logic. You can browse generated representations of the
+proofs:
+
+* [classical logic
+(HTML)](https://inpefess.github.io/free-for-metamath/classical/mmtheorems.html)
+* [classical logic
+   (PDF)](https://inpefess.github.io/free-for-metamath/classical/main.pdf)
+* [relevant logic
+(HTML)](https://inpefess.github.io/free-for-metamath/relevant/mmtheorems.html)
+* [relevant logic
+  (PDF)](https://inpefess.github.io/free-for-metamath/relevant/main.pdf)
 
 # Why Metamath
 
@@ -26,7 +38,7 @@ where one can define complex concepts and formalise (in principle)
 all mathematics starting from foundations - may seem like overkill
 for such a "simple" task. Furthermore, these systems are typically
 not designed to easily accommodate changes to the underlying logic.
-An ideal system would instead provide the following:
+An ideal system would be one:
 
 * where one can specify Hilbert-style axioms and deduction rules
   similar to those found in logic textbooks
@@ -109,12 +121,13 @@ To build HTML representation of the code:
 ./build-html.sh
 ```
 
-You can now open `classical/build/html/mmtheorems.html` in your browser.
+You can now open `[logic]/build/html/mmtheorems.html` in your browser
+(replace `[logic]` by classical or relevant).
 
-To build PDF representation of the code (requires `latexmk`):
+To build PDF representation of the code (requires `pdflatex`):
 
 ```sh
 ./build-pdf.sh
 ```
 
-You can now open `classical/build/tex/main.pdf`.
+You can now open `[logic]/build/tex/main.pdf`.
