@@ -75,3 +75,44 @@ $)
      27-Oct-2026.) $)
   pr-10 $p \vdash ( \lnot \alpha \rightarrow \lnot ( \alpha \wedge \beta ) ) $=
     ( ax-83 ax-1 ax-88 pr-3 pr-4 pr-2 ) ABCZADZIAJDABEAFGH $.
+
+  ${
+    es-134 $e \vdash ( \alpha \rightarrow \gamma ) $.
+    es-135 $e \vdash ( \beta \rightarrow \gamma ) $.
+    $( Inference form of ~ ax-92 .  (Contributed by Boris Shminke,
+       29-Oct-2026.) $)
+    pr-11 $p \vdash ( ( \alpha \vee \beta ) \rightarrow \gamma ) $=
+      ( ax-2 ax-83 ax-84 ax-99 ax-92 ax-98 ) ACFZBCFZGABHCFLMDEIABCJK $.
+  $}
+
+  $( Problem 10.11.4.b from [Priest] p. 218.  (Contributed by Boris Shminke,
+     29-Oct-2026.) $)
+  pr-12 $p \vdash \lnot ( \alpha \wedge \lnot \alpha ) $=
+    ( ax-1 ax-84 ax-83 pr-9 ax-89 pr-2 pr-10 pr-11 ax-98 ) AABZCAKDZBZAEAKMLAAK
+    FGAKHIJ $.
+
+  ${
+    es-136 $e \vdash ( \alpha \rightarrow \beta ) $.
+    es-137 $e \vdash ( \alpha \rightarrow \gamma ) $.
+    $( Inference form of ~ ax-91 .  (Contributed by Boris Shminke,
+       29-Oct-2026.) $)
+    pr-13 $p \vdash ( \alpha \rightarrow ( \beta \wedge \gamma ) ) $=
+      ( ax-2 ax-83 ax-99 ax-91 ax-98 ) ABFZACFZGABCGFKLDEHABCIJ $.
+  $}
+
+  ${
+    es-138 $e \vdash ( \alpha \rightarrow \beta ) $.
+    $( Conditional contrapositive.  (Contributed by Boris Shminke,
+       29-Oct-2026.) $)
+    pr-14 $p \vdash ( \lnot \beta \rightarrow \lnot \alpha ) $=
+      ( ax-1 pr-3 pr-4 pr-2 ) ABDZABHDCBEFG $.
+  $}
+
+  ${
+    es-139 $e \vdash ( \alpha \rightarrow \beta ) $.
+    es-140 $e \vdash ( \alpha \rightarrow \lnot \beta ) $.
+    $( Problem 10.11.4.c from [Priest] p. 218.  (Contributed by Boris Shminke,
+       29-Oct-2026.) $)
+    pr-15 $p \vdash \lnot \alpha $=
+      ( ax-1 ax-83 pr-12 pr-13 pr-14 ax-98 ) BBEZFZEAEBGALABKCDHIJ $.
+  $}
