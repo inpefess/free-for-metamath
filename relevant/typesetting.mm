@@ -60,6 +60,9 @@ htmldef "," as ", ";
 htmldef "\forall" as "&forall;";
   althtmldef "\forall" as "&forall;";
   latexdef "\forall" as "\forall";
+htmldef "\exists" as "&exist;";
+  althtmldef "\exists" as "&exist;";
+  latexdef "\exists" as "\exists";
 htmldef "variable" as '<span style="color: gray;">variable</span> ';
   althtmldef
     "variable" as '<span style="color: gray;">variable</span> ';
