@@ -1,0 +1,1 @@
+../classical/predicate-calculus-syntax.mm
