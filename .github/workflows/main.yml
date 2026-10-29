@@ -60,17 +60,16 @@ jobs:
         id: build-pdf
         with:
           main-file: ${{ matrix.module }}/build/tex/main.tex
-      - name: Prepare HTML Build
-        if: matrix.module == 'classical'
-        run: |
-          mkdir html-build
-          cp classical/build/html/* html-build
-          cp classical/build/tex/main.pdf html-build
-      - name: Upload HTML Build
-        if: matrix.module == 'classical'
-        uses: actions/upload-pages-artifact@v3
+      - name: Archive built HTML
+        uses: actions/upload-artifact@v7
         with:
-          path: ${{ github.workspace }}/html-build
+          name: ${{ matrix.module }}-html
+          path: ${{ matrix.module }}/build/html
+      - name: Archive built PDF
+        uses: actions/upload-artifact@v7
+        with:
+          name: ${{ matrix.module }}-pdf
+          path: ${{ matrix.module }}/build/tex/main.pdf
   deploy:
     permissions:
       pages: write
@@ -82,6 +81,36 @@ jobs:
     needs: build
     if: github.ref == 'refs/heads/master'
     steps:
+      - name: Get classical HTML
+        uses: actions/download-artifact@v8
+        with:
+          name: classical-html
+          path: pages/classical
+      - name: Get classical PDF
+        uses: actions/download-artifact@v8
+        with:
+          name: classical-pdf
+          path: pages/classical/tex
+      - name: Get relevant HTML
+        uses: actions/download-artifact@v8
+        with:
+          name: relevant-html
+          path: pages/relevant
+      - name: Get relevant PDF
+        uses: actions/download-artifact@v8
+        with:
+          name: relevant-pdf
+          path: pages/relevant/tex
+      - name: Move PDF files
+        run: |
+          mv pages/classical/tex/main.pdf pages/classical
+          rmdir pages/classical/tex
+          mv pages/relevant/tex/main.pdf pages/relevant
+          rmdir pages/relevant/tex          
+      - name: Upload HTML Build
+        uses: actions/upload-pages-artifact@v5
+        with:
+          path: ${{ github.workspace }}/pages
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
