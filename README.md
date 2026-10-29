@@ -10,21 +10,19 @@ It is sometimes also called _substitutability_ (e.g. by
 substitution_ (e.g. by [Cocchiarella and
 Freund](https://doi.org/10.1093/acprof:oso/9780195366587.001.0001)).
 
-This repository includes around 100 proofs from classical
-propositional calculus, classical predicate calculus, and Peano
-arithmetic. Apart from that, there are also several proofs in [System
+This repository includes 90 proofs from classical logic
+(propositional calculus, classical predicate calculus, and Peano
+arithmetic). Apart from that, there are also 15 proofs in [System
 R](https://plato.stanford.edu/entries/logic-relevance/logicr.html) of
 relevant logic. You can browse generated representations of the
 proofs:
 
-* [classical logic
-(HTML)](https://inpefess.github.io/free-for-metamath/classical/mmtheorems.html)
-* [classical logic
-   (PDF)](https://inpefess.github.io/free-for-metamath/classical/main.pdf)
-* [relevant logic
-(HTML)](https://inpefess.github.io/free-for-metamath/relevant/mmtheorems.html)
-* [relevant logic
-  (PDF)](https://inpefess.github.io/free-for-metamath/relevant/main.pdf)
+* classical logic:
+  [HTML](https://inpefess.github.io/free-for-metamath/classical/mmtheorems.html)
+  [PDF](https://inpefess.github.io/free-for-metamath/classical/main.pdf)
+* relevant logic:
+  [HTML](https://inpefess.github.io/free-for-metamath/relevant/mmtheorems.html)
+  [PDF](https://inpefess.github.io/free-for-metamath/relevant/main.pdf)
 
 # Why Metamath
 
@@ -131,3 +129,11 @@ To build PDF representation of the code (requires `pdflatex`):
 ```
 
 You can now open `[logic]/build/tex/main.pdf`.
+
+# Similar projects
+
+* Coq formalisation of implicational fragment of relevant logic R:
+  [paper](https://doi.org/10.1007/s10817-020-09555-y)
+  [code](https://github.com/DmxLarchey/Relevant-decidability)
+* Lean formalisation of relevant logic B:
+  [code](https://github.com/gleachkr/Completeness-For-Fine-Semantics)
