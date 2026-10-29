@@ -4,7 +4,10 @@ $(
 ###############################################################################
 
 We extend previously done definitions with symbols ` \wedge `, ` \vee `, and
-` \exists `.
+` \exists `. In fact, Priest does not use functions, only constants, and
+substitutes only constants for variables, so he does not need the notion of
+substitutability (_free for_), but we define it anyway to make the system more
+extendable.
 $)
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
