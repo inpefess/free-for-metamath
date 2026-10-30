@@ -33,7 +33,7 @@ $)
        free in ` \beta ` , then ` v_1 ` does not occur free in
        ` ( \alpha \wedge \beta ) ` .  (Contributed by Boris Shminke,
        29-Oct-2026.) $)
-    ax-101 $a not-free v_1 , ( \alpha \rightarrow \beta ) $.
+    ax-101 $a not-free v_1 , ( \alpha \wedge \beta ) $.
   $}
 
   ${
