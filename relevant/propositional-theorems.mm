@@ -116,3 +116,19 @@ $)
     pr-15 $p \vdash \lnot \alpha $=
       ( ax-1 ax-83 pr-12 pr-13 pr-14 ax-98 ) BBEZFZEAEBGALABKCDHIJ $.
   $}
+
+  ${
+    es-163 $e \vdash ( \lnot \alpha \rightarrow \lnot \beta ) $.
+    $( Conditional contrapositive.  (Contributed by Boris Shminke,
+       30-Oct-2026.) $)
+    pr-16 $p \vdash ( \beta \rightarrow \alpha ) $=
+      ( ax-1 pr-2 ax-93 pr-4 ) BADDAADBCEAFG $.
+  $}
+
+  ${
+    es-164 $e \vdash ( \lnot \alpha \rightarrow \beta ) $.
+    $( Conditional contrapositive.  (Contributed by Boris Shminke,
+       30-Oct-2026.) $)
+    pr-17 $p \vdash ( \lnot \beta \rightarrow \alpha ) $=
+      ( ax-1 pr-3 pr-4 pr-16 ) ABDADBBDDCBEFG $.
+  $}
