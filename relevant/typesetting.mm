@@ -249,4 +249,7 @@ htmldef "atomic-formula" as '<span style="color: ' +
   althtmldef "atomic-formula" as '<span style="color: ' +
     'gray;">atomic-formula</span> ';
   latexdef "atomic-formula" as "\mathrm{atomic\ formula\ }";
+htmldef "is-axiom" as '<span style="color: gray;">is-axiom</span> ';
+  althtmldef "is-axiom" as '<span style="color: gray;">is-axiom</span> ';
+  latexdef "is-axiom" as "\mathrm{is\ axiom\ }";
 $)
