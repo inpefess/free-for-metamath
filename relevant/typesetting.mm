@@ -60,9 +60,6 @@ htmldef "," as ", ";
 htmldef "\forall" as "&forall;";
   althtmldef "\forall" as "&forall;";
   latexdef "\forall" as "\forall";
-htmldef "\exists" as "&exist;";
-  althtmldef "\exists" as "&exist;";
-  latexdef "\exists" as "\exists";
 htmldef "variable" as '<span style="color: gray;">variable</span> ';
   althtmldef
     "variable" as '<span style="color: gray;">variable</span> ';
@@ -252,4 +249,22 @@ htmldef "atomic-formula" as '<span style="color: ' +
   althtmldef "atomic-formula" as '<span style="color: ' +
     'gray;">atomic-formula</span> ';
   latexdef "atomic-formula" as "\mathrm{atomic\ formula\ }";
+htmldef "is-axiom" as '<span style="color: gray;">is-axiom</span> ';
+  althtmldef "is-axiom" as '<span style="color: gray;">is-axiom</span> ';
+  latexdef "is-axiom" as "\mathrm{is\ axiom\ }";
+htmldef "=" as " = ";
+  althtmldef "=" as " = ";
+  latexdef "=" as "=";
+htmldef "0" as "0";
+  althtmldef "0" as "0";
+  latexdef "0" as "0";
+htmldef "+" as " + ";
+  althtmldef "+" as " + ";
+  latexdef "+" as "+";
+htmldef "\times" as " &times; ";
+  althtmldef "\times" as " &times; ";
+  latexdef "\times" as "\times";
+htmldef "'" as "'";
+  althtmldef "'" as "'";
+  latexdef "'" as "'\,";
 $)
